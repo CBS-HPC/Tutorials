@@ -12,3 +12,19 @@ https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/Conda_R%20Environment%20Ma
 
 ### Python:
 https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/Conda_R%20Environment%20Management.ipynb 
+
+## Slurm Clustering on UCloud 
+
+description
+
+### R:
+
+### Python:
+
+### Matlab:
+
+### Stata:
+
+## GPU's on UCloud 
+
+###
