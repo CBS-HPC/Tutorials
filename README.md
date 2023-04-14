@@ -1,9 +1,7 @@
 # UCloud Tutorials
 
-text
+Introduction text
 
-
-# UCloud Tutorials
 
 ## R Environment: Using Conda for easy management of R environments
 
