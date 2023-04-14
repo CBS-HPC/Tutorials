@@ -3,7 +3,7 @@
 Introduction text
 
 
-## Conda - Package, dependency and environment management for any language—Python, R and [more](https://docs.conda.io/en/latest/).
+## Conda
 Description
 
 ## Slurm Clustering on UCloud 
