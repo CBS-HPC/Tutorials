@@ -2,9 +2,12 @@
 
 Text 
 
-## Docker Images
+# Acessing Virtual Machine
+## Generate SSH
+## Acessing VM
 
+
+# Installing Environment
 ## Conda
-
+## Docker
 ## Cotainer
-
