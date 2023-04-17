@@ -3,15 +3,13 @@
 Text 
 
 
-## Generating SSH-key
-
 ## Acessing Virtual Machine
+### Generating SSH-key
+### Connecting to VM
+### Transfering files to and from VM
 
-
-
-## Docker Images
-
-## Conda
-
-## Cotainer
+## Setting Environment
+### Docker Images
+### Conda
+### Cotainer
 
