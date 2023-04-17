@@ -3,8 +3,8 @@
 Text 
 
 # Acessing Virtual Machine
-## [Generate SSH]()
-## [Acessing VM]()
+## [Generate SSH](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/GPUs/shh.ipynb)
+## [Acessing VM](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/GPUs/connectVM.ipynb)
 
 
 # Installing Environment
