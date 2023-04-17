@@ -8,8 +8,6 @@ Text
 
 ## Setting up Environment
 ### [Conda]()
-
-## Setting up Container
 ### [Docker]()
-### [Cotainer]
+### [Cotainer]()
 
