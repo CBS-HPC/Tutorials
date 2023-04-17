@@ -3,13 +3,13 @@
 Introduction text
 
 
-## [Conda](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/Conda/Conda.md)
+## [Conda](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/Conda/README.md)
 Description
 
-## [Slurm Clustering on UCloud](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/SlurmCluster/SlurmCluster.md) 
+## [Slurm Clustering on UCloud](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/SlurmCluster/README.md) 
 
 description
 
-## [GPU's on UCloud](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/GPUs/GPUs.md) 
+## [GPU's on UCloud](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/GPUs/README.md) 
 
 Description
