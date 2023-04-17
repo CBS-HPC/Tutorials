@@ -4,7 +4,7 @@ Text
 
 
 ## Acessing Virtual Machine
-### - Generating SSH-key
+### - [Generating SSH-key](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/GPUs/shh.ipynb)
 ### - Connecting to VM
 ### - Transfering files to and from VM
 
