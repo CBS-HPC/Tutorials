@@ -2,12 +2,9 @@
 
 Text 
 
-## Acessing Virtual Machine
-### [Generating SSH-key](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/GPUs/shh.ipynb)
-### [SSH to VM]()
+## Docker Images
 
-## Setting up Environment
-### [Conda]()
-### [Docker]()
-### [Cotainer]()
+## Conda
+
+## Cotainer
 
