@@ -10,4 +10,4 @@ Package, dependency and environment management for any language—Python, R and 
 
 ## [Python](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/Conda/Conda_Python.ipynb)
 
-## [Overview of avaible Conda documentation on UCloud](https://docs.cloud.sdu.dk/search.html?q=Conda&check_keywords=yes&area=default) 
+## [Conda documentation on UCloud](https://docs.cloud.sdu.dk/search.html?q=Conda&check_keywords=yes&area=default) 
