@@ -8,4 +8,4 @@
 
 [Virtual SLURM Learning (Hosted by Deic)](https://deic.dk/en/news/2022-11-21/virtual-slurm-learning-environment-ready)
 
-[UCloud Tutorials (Hosted by UCloud](https://docs.cloud.sdu.dk/tutorials/tutorial1.html)
+[UCloud Tutorials (Hosted by UCloud)](https://docs.cloud.sdu.dk/tutorials/tutorial1.html)
