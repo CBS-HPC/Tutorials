@@ -8,4 +8,4 @@ Introduction text
 
 [GPU's on UCloud](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/GPUs/README.md)
 
-[Virtual SLURM Learning](https://deic.dk/en/news/2022-11-21/virtual-slurm-learning-environment-ready)
+[Virtual SLURM Learning (Hosted by Deic)](https://deic.dk/en/news/2022-11-21/virtual-slurm-learning-environment-ready)
