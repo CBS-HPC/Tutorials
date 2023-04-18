@@ -10,8 +10,10 @@ Using Conda environements elimnates the need for re-install all the needed packa
 This approach is also highly useful when running [multi-node Slurm Clusters](https://github.com/CBS-HPC/Tutorials/blob/main/SlurmCluster/README.md). 
 
 
-## [R](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/Conda/Conda_R.ipynb)
+[R](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/Conda/Conda_R.ipynb)
 
-## [Python](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/Conda/Conda_Python.ipynb)
+[Python](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/Conda/Conda_Python.ipynb)
 
-## [Conda documentation on UCloud](https://docs.cloud.sdu.dk/search.html?q=Conda&check_keywords=yes&area=default) 
+Further documentation can be found on UCloud:
+
+[Conda on UCloud](https://docs.cloud.sdu.dk/search.html?q=Conda&check_keywords=yes&area=default) 
