@@ -5,12 +5,9 @@ Package, dependency and environment management for any language—Python, R and 
 
 The following links provides step-by-step guides on how to install and use Conda for R and Python on a range of different UCloud applications (R Studio, VScode, JupyterLab and Terminal App).
 
--A clear benefit of using Conda environements is elimnated the needed to re-install all the needed packages/libraries when starting a UCloud Job.
-- 
-- This approah is also very benification Furthermore, 
+Using Conda environements elimnates the need for re-install all the needed packages/libraries when starting a UCloud Job.
 
-
-
+This approach is also highly useful when running [multi-node Slurm Clusters](https://github.com/CBS-HPC/Tutorials/blob/main/SlurmCluster/README.md). 
 
 
 ## [R](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/Conda/Conda_R.ipynb)
