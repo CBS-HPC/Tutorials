@@ -18,4 +18,4 @@ Further documentation can be found on UCloud:
 
 [Conda on UCloud](https://docs.cloud.sdu.dk/search.html?q=Conda&check_keywords=yes&area=default) 
 
-### 23-04-18 by Kristoffer Gulmark Poulsen (kgp.lib@cbs.dk) 
+#### 23-04-18 by Kristoffer Gulmark Poulsen (kgp.lib@cbs.dk) 
