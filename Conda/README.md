@@ -1,5 +1,5 @@
 
-## Conda
+## Conda on UCloud - 23-04-18 by Kristoffer Gulmark Poulsen (kgp.lib@cbs.dk) 
 
 Package, dependency and environment management for any language—Python, R and [more](https://docs.conda.io/en/latest/).
 
