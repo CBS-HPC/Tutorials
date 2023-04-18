@@ -1,5 +1,5 @@
 
-## Conda on UCloud - 23-04-18 by Kristoffer Gulmark Poulsen (kgp.lib@cbs.dk) 
+## Conda on UCloud
 
 Package, dependency and environment management for any language—Python, R and [more](https://docs.conda.io/en/latest/).
 
@@ -17,3 +17,5 @@ This approach is also highly useful when running [multi-node Slurm Clusters](htt
 Further documentation can be found on UCloud:
 
 [Conda on UCloud](https://docs.cloud.sdu.dk/search.html?q=Conda&check_keywords=yes&area=default) 
+
+23-04-18 by Kristoffer Gulmark Poulsen (kgp.lib@cbs.dk) 
