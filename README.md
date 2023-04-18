@@ -9,3 +9,5 @@
 [Virtual SLURM Learning (Hosted by DeiC)](https://deic.dk/en/news/2022-11-21/virtual-slurm-learning-environment-ready)
 
 [UCloud Tutorials (Hosted by UCloud)](https://docs.cloud.sdu.dk/tutorials/tutorial1.html)
+
+[Quick guide on running JupyterLab on UCloud (Hosted by RUC)](https://hpc.ruc.dk/blog/tutorials/quick-guide-on-running-jupyterlab-on-ucloud/)
