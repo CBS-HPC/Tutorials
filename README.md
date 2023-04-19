@@ -1,6 +1,6 @@
 ## Tutorials
 
-[Getting Started with Interactive HPC (UCloud)](https://github.com/CBS-HPC/.github/blob/main/profile/UCloud.md)
+[Getting Started with UCloud](https://github.com/CBS-HPC/.github/blob/main/profile/UCloud.md)
 
 [Conda on UCloud](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/Conda/README.md)
 
