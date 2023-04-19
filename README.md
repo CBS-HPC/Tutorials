@@ -2,7 +2,7 @@
 
 [Conda on UCloud](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/Conda/README.md)
 
-[Slurm Clustering on UCloud](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/SlurmCluster/README.md)
+[Slurm Clustering on UCloud](https://github.com/CBS-HPC/UCloud_SlurmCluster/blob/main/README.md)
 
 [GPU's on UCloud](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/GPUs/README.md)
 
