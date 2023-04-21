@@ -8,7 +8,7 @@
 
 [Virtual Machines on UCloud](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/VMs/README.md)
 
-## UCloud Tutorials (External Sources)
+## UCloud Documentation 
 
 [UCloud Tutorials - Introduction to UCloud (Hosted by UCloud)](https://docs.cloud.sdu.dk/tutorials/tutorial1.html)
 
