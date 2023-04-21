@@ -21,6 +21,3 @@
 
 ## Python
 [High Performance Data Analytics in Python (Hosted by ENCCS)](https://enccs.github.io/HPDA-Python/#) 
-
-## R 
-
