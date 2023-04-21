@@ -14,6 +14,8 @@
 
 [UCloud Documentation (Hosted by UCloud)](https://docs.cloud.sdu.dk/)
 
+[Synchronization to UCloud (Hosted by UCloud)](https://docs.cloud.sdu.dk/guide/synch.html?highlight=syncthing)
+
 [Quick guide on running JupyterLab on UCloud (Hosted by RUC)](https://hpc.ruc.dk/blog/tutorials/quick-guide-on-running-jupyterlab-on-ucloud/) 
 
 ## General HPC Documentation
