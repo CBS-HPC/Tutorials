@@ -2,7 +2,7 @@
 
 [Getting Started with HPC (UCloud)](https://github.com/CBS-HPC/.github/blob/main/profile/UCloud.md)
 
-[Conda on UCloud](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/Conda/README.md)
+[Using Conda on UCloud to manage R-packages and Python-libraries](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/Conda/README.md)
 
 [SLURM Clusters on UCloud](https://github.com/CBS-HPC/UCloud_SlurmCluster/blob/main/README.md)
 
