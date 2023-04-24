@@ -4,9 +4,9 @@ Text
 
 ### Acessing Virtual Machine
 
-[Generate SSH](https://github.com/CBS-HPC/Tutorials/blob/main/VMs/shh.ipynb)
+[How to Generate SSH key](https://github.com/CBS-HPC/Tutorials/blob/main/VMs/shh.ipynb)
 
-[Acessing VM](https://github.com/CBS-HPC/Tutorials/blob/main/VMs/connectVM.ipynb)
+[Acessing VM using SSH](https://github.com/CBS-HPC/Tutorials/blob/main/VMs/connectVM.ipynb)
 
 ### External Tutorials
 
