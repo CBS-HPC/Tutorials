@@ -4,16 +4,9 @@ Text
 
 ### Acessing Virtual Machine
 
-[Generate SSH](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/GPUs/shh.ipynb)
+[Generate SSH](https://github.com/CBS-HPC/Tutorials/blob/main/VMs/shh.ipynb)
 
-[Acessing VM](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/GPUs/connectVM.ipynb)
-
-### Installing Environment
-[Conda]()
-
-[Docker]()
-
-[Cotainer]()
+[Acessing VM](https://github.com/CBS-HPC/Tutorials/blob/main/VMs/connectVM.ipynb)
 
 ### External Tutorials
 
