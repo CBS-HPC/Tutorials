@@ -1,6 +1,10 @@
-## Virtual Machines on UCloud 
+## Virtual Machines on UCloud
 
-In the making 
+Still in the making
+
+[How to Generate SSH key](https://github.com/CBS-HPC/Tutorials/blob/main/VMs/shh.ipynb)
+
+[Acessing VM using SSH](https://github.com/CBS-HPC/Tutorials/blob/main/VMs/connectVM.ipynb)
 
 ### External Tutorials
 
