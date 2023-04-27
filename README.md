@@ -4,7 +4,7 @@
 
 [Using Conda on UCloud to manage R-packages and Python-libraries](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/Conda/README.md)
 
-[SLURM Clusters on UCloud](https://github.com/CBS-HPC/UCloud_SlurmCluster/blob/main/README.md)
+[SLURM Clusters on UCloud](https://github.com/CBS-HPC/UCloud_SlurmCluster)
 
 [Virtual Machines on UCloud](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/VMs/README.md)
 
