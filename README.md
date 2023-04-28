@@ -7,6 +7,7 @@
 - [Virtual Machines on UCloud](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/VMs/README.md)
 
 ### TYPE 1 (UCloud) 
+#### SDU
 - [Manage Files and Folders (Hosted by UCloud)](https://docs.cloud.sdu.dk/tutorials/tutorial1.html)
 - [Manage Applications (Hosted by UCloud)](https://docs.cloud.sdu.dk/tutorials/tutorial2.html)
 - [Manage Workspaces (Hosted by UCloud)](https://docs.cloud.sdu.dk/tutorials/tutorial1.html)
@@ -15,6 +16,13 @@
 - [UCloud Documentation (Hosted by UCloud)](https://docs.cloud.sdu.dk/index.html)
 - [Synchronization to UCloud (Hosted by UCloud)](https://docs.cloud.sdu.dk/guide/synch.html?highlight=syncthing)
 - [Quick guide on running JupyterLab on UCloud (Hosted by RUC)](https://hpc.ruc.dk/blog/tutorials/quick-guide-on-running-jupyterlab-on-ucloud/) 
+#### AAU
+
+### Type 2
+
+#### 
+
+### Type 3 (Hippo)
 
 ### Type 5 (LUMI)
 - [Cotainr (Hosted by DieC)](https://www.deic.dk/da/news/2023-1-4/cotainr-vaerktoej-skal-goere-LUMI-brug-lettere)
