@@ -20,10 +20,9 @@
 - [Setting up jupyter-notebook with GPUs on AAU (Hosted by RUC)](https://hpc.ruc.dk/blog/uncategorized/setting-up-jupyternotebook-with-gpus-on-aau/)
 
 ### Type 2
-#### Computerome 2.0
-#### GenomeDK
-#### Sophia
-
+[Computerome 2.0 - Documentation](https://www.computerome.dk/wiki/high-performance-computing-hpc)
+[GenomeDK - Documentation](https://genome.au.dk/docs/)
+[Sophia - Documentation](https://dtu-sophia.github.io/docs/)
 
 ### Type 3 (Hippo)
 
