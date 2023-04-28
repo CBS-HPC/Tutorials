@@ -6,7 +6,7 @@
 - [SLURM Clusters on UCloud](https://github.com/CBS-HPC/UCloud_SlurmCluster)
 - [Virtual Machines on UCloud](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/VMs/README.md)
 
-### UCloud Documentation 
+### TYPE 1 (UCloud) 
 - [Manage Files and Folders (Hosted by UCloud)](https://docs.cloud.sdu.dk/tutorials/tutorial1.html)
 - [Manage Applications (Hosted by UCloud)](https://docs.cloud.sdu.dk/tutorials/tutorial2.html)
 - [Manage Workspaces (Hosted by UCloud)](https://docs.cloud.sdu.dk/tutorials/tutorial1.html)
@@ -15,6 +15,10 @@
 - [UCloud Documentation (Hosted by UCloud)](https://docs.cloud.sdu.dk/index.html)
 - [Synchronization to UCloud (Hosted by UCloud)](https://docs.cloud.sdu.dk/guide/synch.html?highlight=syncthing)
 - [Quick guide on running JupyterLab on UCloud (Hosted by RUC)](https://hpc.ruc.dk/blog/tutorials/quick-guide-on-running-jupyterlab-on-ucloud/) 
+
+
+### Type 5(LUMI)
+[Cotainer (Hosted by DieC](https://www.deic.dk/da/news/2023-1-4/cotainr-vaerktoej-skal-goere-LUMI-brug-lettere)
 
 ### General HPC Documentation
 - [ENCCS Lessons](https://enccs.se/lessons/)
