@@ -16,12 +16,12 @@
 - [Synchronization to UCloud (Hosted by UCloud)](https://docs.cloud.sdu.dk/guide/synch.html?highlight=syncthing)
 - [Quick guide on running JupyterLab on UCloud (Hosted by RUC)](https://hpc.ruc.dk/blog/tutorials/quick-guide-on-running-jupyterlab-on-ucloud/) 
 
-
 ### Type 5(LUMI)
-[Cotainer (Hosted by DieC](https://www.deic.dk/da/news/2023-1-4/cotainr-vaerktoej-skal-goere-LUMI-brug-lettere)
+- [Cotainer (Hosted by DieC](https://www.deic.dk/da/news/2023-1-4/cotainr-vaerktoej-skal-goere-LUMI-brug-lettere)
 
 ### General HPC Documentation
 - [ENCCS Lessons](https://enccs.se/lessons/)
+- [Virtual SLURM Learning (Hosted by DieC)](https://deic.dk/en/news/2022-11-21/virtual-slurm-learning-environment-ready)
 
 ### Python
 - [High Performance Data Analytics in Python (Hosted by ENCCS)](https://enccs.github.io/HPDA-Python/#) 
