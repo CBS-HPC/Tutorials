@@ -35,3 +35,9 @@
 
 ### Python
 - [High Performance Data Analytics in Python (Hosted by ENCCS)](https://enccs.github.io/HPDA-Python/#) 
+
+### Other Links
+- [Deic HPC GitHub](https://github.com/DeiC-HPC)
+- [RUC HPC](https://hpc.ruc.dk/)
+- [Code Refinery](https://coderefinery.org/)
+
