@@ -19,14 +19,14 @@
 #### AAU
 - [Setting up jupyter-notebook with GPUs on AAU (Hosted by RUC)](https://hpc.ruc.dk/blog/uncategorized/setting-up-jupyternotebook-with-gpus-on-aau/)
 
-### Type 2
+### TYPE 2
 - [Computerome 2.0 - Documentation](https://www.computerome.dk/wiki/high-performance-computing-hpc)
 - [GenomeDK - Documentation](https://genome.au.dk/docs/)
 - [Sophia - Documentation](https://dtu-sophia.github.io/docs/)
 
-### Type 3 (Hippo)
+### TYPE 3 (Hippo)
 
-### Type 5 (LUMI)
+### TYPE 5 (LUMI)
 - [Cotainr (Hosted by DieC)](https://www.deic.dk/da/news/2023-1-4/cotainr-vaerktoej-skal-goere-LUMI-brug-lettere)
 
 ### General HPC Documentation
