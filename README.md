@@ -25,7 +25,7 @@
 - [Sophia - Documentation](https://dtu-sophia.github.io/docs/)
 
 ### TYPE 3 (Hippo)
--[User Guide (Hosted by UCloud)](https://docs.hpc-type3.sdu.dk/index.html)
+- [User Guide (Hosted by UCloud)](https://docs.hpc-type3.sdu.dk/index.html)
 ### TYPE 5 (LUMI)
 - [Cotainr (Hosted by DieC)](https://www.deic.dk/da/news/2023-1-4/cotainr-vaerktoej-skal-goere-LUMI-brug-lettere)
 
