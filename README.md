@@ -28,7 +28,7 @@
 ### TYPE 3 (Hippo)
 - [User Guide (Hosted by UCloud)](https://docs.hpc-type3.sdu.dk/index.html)
 ### TYPE 5 (LUMI)
-- [Cotainr (Hosted by DieC)](https://www.deic.dk/da/news/2023-1-4/cotainr-vaerktoej-skal-goere-LUMI-brug-lettere)
+- [Cotainr (Hosted by DeiC)](https://www.deic.dk/da/news/2023-1-4/cotainr-vaerktoej-skal-goere-LUMI-brug-lettere)
 
 ### General HPC Documentation
 - [ENCCS Lessons](https://enccs.se/lessons/)
@@ -38,7 +38,7 @@
 - [High Performance Data Analytics in Python (Hosted by ENCCS)](https://enccs.github.io/HPDA-Python/#) 
 
 ### Other Links
-- [Deic HPC GitHub](https://github.com/DeiC-HPC)
+- [DeiC HPC GitHub](https://github.com/DeiC-HPC)
 - [RUC HPC](https://hpc.ruc.dk/)
 - [Code Refinery](https://coderefinery.org/)
 
