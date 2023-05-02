@@ -32,7 +32,7 @@
 
 ### General HPC Documentation
 - [ENCCS Lessons](https://enccs.se/lessons/)
-- [Virtual SLURM Learning (Hosted by DieC)](https://deic.dk/en/news/2022-11-21/virtual-slurm-learning-environment-ready)
+- [Virtual SLURM Learning (Hosted by DeiC)](https://deic.dk/en/news/2022-11-21/virtual-slurm-learning-environment-ready)
 
 ### Python
 - [High Performance Data Analytics in Python (Hosted by ENCCS)](https://enccs.github.io/HPDA-Python/#) 
