@@ -6,6 +6,7 @@
 - [SLURM Clusters on UCloud](https://github.com/CBS-HPC/UCloud_SlurmCluster)
 - [Virtual Machines on UCloud](https://github.com/CBS-HPC/UCloud-Tutorials/blob/main/VMs/README.md)
 - [Batch Processing on UCloud](https://github.com/CBS-HPC/UCloud_BatchMode/blob/main/README.md)
+- [Transfer large data to UCloud using Rsync]()
 
 ### TYPE 1 (UCloud) 
 #### SDU
