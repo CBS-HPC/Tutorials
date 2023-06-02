@@ -4,7 +4,7 @@ This application is used to deploy an rsync server, which is a utility to effici
 
 [UCloud documentation on Rsync](https://docs.cloud.sdu.dk/Apps/rsync.html)
 
-# For Windows Installing Ubuntu on local machine (For Windows)
+# Installing Ubuntu on local machine (For Windows)
 
 Video Tutorial found [here](https://www.google.com/search?client=firefox-b-d&q=install+rsync+on+windows#fpstate=ive&vld=cid:da30000b,vid:qJN9mb8fjDM)
 
