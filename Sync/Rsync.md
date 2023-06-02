@@ -59,10 +59,10 @@ Fill out "Job name","Hours", "Machine type".
 ### Step 7: Start the Job 
 ![](Image8.PNG)
 
-#### Step 8: When the Job is ready the IP adress and the password is shown as below: 
+### Step 8: When the Job is ready the IP adress and the password is shown as below: 
 ![](Image9.PNG)
 
-### Open Terminal on local machine (For Windows)
+## Open Terminal on local machine (For Windows)
 
 
 ```R
@@ -90,4 +90,4 @@ rsync -avP -e "ssh -i ~/.ssh/id_rsa -p 22"  ./myfolder/ ucloud@13x.2x5.1x4.13x:/
 # Password will be prompted. Copy the password over from the Job "info page". The password will be hidden in the terminal. 
 ```
 
-### Open UCloud job terminal (see button in figure above) and double check that the data transfer was successful.
+## Open UCloud job terminal (see button in figure above) and double check that the data transfer was successful.
