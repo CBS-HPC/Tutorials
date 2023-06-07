@@ -8,9 +8,9 @@ Using a Conda environement elimnates the need for re-installing all the needed p
 
 This approach is also highly useful when running [multi-node Slurm Clusters](/UCloud_SlurmCluster/Overview/). 
 
-[R](/UCloud-Tutorials/Conda/Conda_R/)
+[R](/Tutorials/Conda/Conda_R/)
 
-[Python](/UCloud-Tutorials/Conda/Conda_Python/)
+[Python](/Tutorials/Conda/Conda_Python/)
 
 Further documentation can be found on UCloud:
 
