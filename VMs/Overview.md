@@ -2,6 +2,6 @@
 
 Still in the making
 
-[How to Generate SSH key](https://github.com/CBS-HPC/Tutorials/blob/main/VMs/shh.ipynb)
+[How to Generate SSH key](CBS-HPC/VMs/shh/)
 
-[Acessing VM using SSH](https://github.com/CBS-HPC/Tutorials/blob/main/VMs/connectVM.ipynb)
+[Acessing VM using SSH](CBS-HPC/VMs/connectVM/)
