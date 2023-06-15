@@ -11,7 +11,7 @@ Video Tutorial found [here](https://www.google.com/search?client=firefox-b-d&q=i
 
 ## Add public SSH key to UCloud
 
-Information on how to generate a SSH key can be found [here](https://github.com/CBS-HPC/Tutorials/blob/main/VMs/shh.ipynb)
+Information on how to generate a SSH key can be found [here](/Tutorials/VMs/shh/)
 
 Copy the public SSH key (.pub file) to UCloud.
 
@@ -21,7 +21,7 @@ Copy the public SSH key (.pub file) to UCloud.
 
 ## Apply for a Public IP on UCloud
 
-A UCloud public IP is need to use Rsync. This can be obtained through a [UCloud grant application](https://github.com/CBS-HPC/.github/blob/main/profile/GrantApp.md) by filling out the field shown below:
+A UCloud public IP is need to use Rsync. This can be obtained through a [UCloud grant application](/HPC_Facilities/GrantApp/) by filling out the field shown below:
 
 
 ![](Image1.PNG)
