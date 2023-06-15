@@ -9,7 +9,9 @@
 - [Rsync - Large data transfer to UCloud](https://github.com/CBS-HPC/Tutorials/blob/main/Sync/Rsync.ipynb)
 
 ### TYPE 1 (UCloud) 
-#### SDU
+
+**SDU**
+
 - [Manage Files and Folders (Hosted by UCloud)](https://docs.cloud.sdu.dk/tutorials/tutorial1.html)
 - [Manage Applications (Hosted by UCloud)](https://docs.cloud.sdu.dk/tutorials/tutorial2.html)
 - [Manage Workspaces (Hosted by UCloud)](https://docs.cloud.sdu.dk/tutorials/tutorial1.html)
@@ -18,7 +20,9 @@
 - [UCloud Documentation (Hosted by UCloud)](https://docs.cloud.sdu.dk/index.html)
 - [Synchronization to UCloud (Hosted by UCloud)](https://docs.cloud.sdu.dk/guide/synch.html?highlight=syncthing)
 - [Quick guide on running JupyterLab on UCloud (Hosted by RUC)](https://hpc.ruc.dk/blog/tutorials/quick-guide-on-running-jupyterlab-on-ucloud/) 
-#### AAU
+
+**AAU**
+
 - [Setting up jupyter-notebook with GPUs on AAU (Hosted by RUC)](https://hpc.ruc.dk/blog/uncategorized/setting-up-jupyternotebook-with-gpus-on-aau/)
 
 ### TYPE 2
