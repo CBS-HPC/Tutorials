@@ -1,93 +1,136 @@
 # UCloud Tutorial: Transfer large data to UCloud using Rsync
 
-This application is used to deploy an rsync server, which is a utility to efficiently transfer and synchronize files and directories between two different systems
+Rsync, short for "remote synchronization," is a powerful and widely used file synchronization and transfer utility. It enables efficient copying and updating of files between different locations, whether they are on the same system or across a network. Rsync is particularly valuable for managing large data sets or performing incremental backups.
+
+What sets Rsync apart is its ability to synchronize files by transferring only the differences between the source and destination files. This delta transfer mechanism greatly reduces the amount of data that needs to be transmitted, making Rsync highly efficient, even for large files or slow network connections.
+
+Rsync also offers several advanced features, such as compression, encryption, and the ability to preserve various file attributes, such as permissions, timestamps, and symbolic links. It supports both local file copying and remote transfers via SSH, allowing secure synchronization between different systems.
+
+With its flexibility, speed, and efficient use of network resources, Rsync has become a go-to tool for tasks like backup and mirroring, remote file distribution, and content deployment. It has a command-line interface, making it scriptable and suitable for both one-time transfers and automated, scheduled tasks.
+
+
+
 
 [UCloud documentation on Rsync](https://docs.cloud.sdu.dk/Apps/rsync.html)
 
 # Installing Ubuntu on local machine (For Windows)
 
-Video Tutorial found [here](https://www.google.com/search?client=firefox-b-d&q=install+rsync+on+windows#fpstate=ive&vld=cid:da30000b,vid:qJN9mb8fjDM)
+Rsync is not natively available for Windows. However, you can install Rsync on Windows using a third-party implementation such as Cygwin or DeltaCopy. Alternatively, you can install Ubuntu on Windows which then comes whic includes Rsync.
+
+In this guide we will use Rsync through Ubuntu. For more infomation and video tutorials can be found [here](https://www.google.com/search?client=firefox-b-d&q=install+rsync+on+windows#fpstate=ive&vld=cid:da30000b,vid:qJN9mb8fjDM).
 
 
-## Add public SSH key to UCloud
+## Create a SSH-key within your Ubuntu environment
 
-Information on how to generate a SSH key can be found [here](/Tutorials/VMs/shh/)
+Despite already having a shh-key (in your windows environment) the easiest will be to create a new SSH-key within your Ubuntu environment. Open a terminal and follow the few steps below.
 
-Copy the public SSH key (.pub file) to UCloud.
+More information on how to generate a SSH key can be found [here](/Tutorials/VMs/shh/)
 
-![](Image0.PNG)
-
-
-
-## Apply for a Public IP on UCloud
-
-A UCloud public IP is need to use Rsync. This can be obtained through a [UCloud grant application](/HPC_Facilities/GrantApp/) by filling out the field shown below:
-
-
-![](Image1.PNG)
-
-The application subsequently needs to be accepted by CBS front office personal.
-
-## Start Rsync Job and Configure Ports for Public IP'
-
-Fill out "Job name","Hours", "Machine type".
-
-
-### Step 1: Select the "Public IP", "SSH Public Key" & "Rsync Volume" fields
-
-- "Public IP" - see steps below.
-- "SHH Public Key" - Select the .pub file you have just uploaded to UCloud.
-- "Rsync Volume" - Select the UCloud folder where the files/folders should be transferred to.
-
-![](Image2.PNG)
-
-### Step 2: If no Public IPs are activated press "Create public ip"
-![](Image3.PNG)
-
-### Step 3: Select the "public-ip" product
-![](Image4.PNG)
-
-### Step 4: press the "3 dots button" and select "Properties".
-![](Image5.PNG)
-
-### Step 5: Open the firewall for ports 22 and 873 as shown below: 
-![](Image6.PNG)
-
-### Step 6: Select the configured Public IP
-![](Image7.PNG)
-
-### Step 7: Start the Job 
-![](Image8.PNG)
-
-### Step 8: When the Job is ready the IP adress and the password is shown as below: 
-![](Image9.PNG)
-
-## Open Terminal on local machine (For Windows)
 
 
 ```R
 # Activate Ubuntu 
 wsl
 
-# Navigate to path contain the folder of files to transfer - Alternatively you can open terminal directly in the right directory to skip step below.
-cd "path/of/folders-or-files"
+# For linux only 
+sudo apt install openssh-client
+
+# Create key
+ssh-keygen
+
+# Output: 
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\user/.ssh/id_rsa): # press enter
+Enter passphrase (empty for no passphrase):                         # press enter
+Enter same passphrase again:                                        # press enter
+Your identification has been saved in /home/user/.ssh/id_rsa.
+Your public key has been saved in /home/user/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:V4jnGjEIpUYU4tghvdfdkJj+hnd8t/E70SNGdsdepmX7E ggs\use@CBSxxxx
+The key's randomart image is:
++---[RSA 3072]----+
+|o o.=o....       |
+|+O++.o . .. .    |
+|=+=*o .. + o .   |
+|..oo.    = + .   |
+| ..o . .S = o o  |
+|  o . o .O o E   |
+|       o= . + .  |
+|   ..   .  = .   |
+|         .. o    |
++----[SHA256]-----+
 
 
-# NO ENCRYPTION (NOT RECOMMENDED): Transfer the folder "myfolder" to work/myfolder on UCloud. No Public key should have been uploaded during Rsync Job configuration.
-
-rsync -avP ./myfolder rsync://ucloud@13x.2x5.1x4.13x:873/volume  # Exchange to the rigth IP adress
-
-
-# SSH ENCRYPTION: Transfer the folder "myfolder" to work/myfolder on UCloud. (USing SSH - encrypted)
-rsync -avP -e "ssh -i ~/.ssh/id_rsa -p 22"  ./myfolder/ ucloud@13x.2x5.1x4.13x:/work/myfolder2 
-
-# Change the following to the above line:
-# "~/.ssh/id_rsa"  : the path to private SSH key as specified through the Ubuntu terminal. The best way to ensure this is to open a Ubuntu terminal in the ".ssh" folder
-# "./myfolder/"    : the folder folder/files you want to copy over.
-# "13x.2x5.1x4.13x": The IP adress
-# "/work/myfolder": the path to the Rsync volume.. in this case the folder "myfolder" was chosen.
-
-# Password will be prompted. Copy the password over from the Job "info page". The password will be hidden in the terminal. 
 ```
 
-## Open UCloud job terminal (see button in figure above) and double check that the data transfer was successful.
+## Copy public SSH-key
+
+
+```R
+# Open Public Key
+vim /home/user/.ssh/id_rsa.pub
+
+# highlight public key with mouse and copy using "ctrl+c"
+```
+
+![](Image1.PNG)
+
+## Add public SSH key to UCloud
+
+### Step 1: On UCloud go to "Resources -> SHH-Keys -> Create SSH key" 
+
+![](Image2.PNG)
+
+### Step 2: Paste pulic key, give a meaningful name and press "Add SSH key". 
+
+![](Image3.PNG)
+
+
+![](Image4.PNG)
+
+
+More information can be found in the UCloud [documentation](https://docs.cloud.sdu.dk/Apps/general_settings.html#configure-ssh-access).
+
+
+## Start Rsync Job
+
+### Step 1: Start Rsync Job by filling out the necessary fields
+
+![](Image5.PNG)
+
+### Step 2: When job ready please locate the SSH port which is randomly generated. In the cas below the SHH port is 2167.
+
+![](Image6.PNG)
+
+## Connect from local machine using SSH.
+
+Open Terminal and follow steps below.
+
+
+```R
+# Activate Ubuntu (for Windows)
+wsl
+
+# SHH connect using the command marked with in the figure above.
+ssh ucloud@ssh.cloud.sdu.dk -p 2167
+
+```
+
+If sucessfull you should get the output shown in the figure below.
+
+![](Image7.PNG)
+
+## Transfer data using Rsync
+
+
+```R
+# Navigate to path contain the folder of files to transfer - Alternatively you can open terminal directly in the right directory to skip step below.
+cd "path/of/folders-or-files" 
+
+# Activate Ubuntu (for Windows)
+wsl
+
+# SSH transfer "myfolder" to /work directory on UCloud 
+
+rsync -avP -e "ssh -i ~/.ssh/id_rsa -p 2167" ./myfolder/ ucloud@ssh.cloud.sdu.dk:/work/myfolder 
+```

@@ -94,6 +94,8 @@ Changing the BLAS/LAPACK libraries is **not** possible for the "MKL" versions of
 
 
 ```python
+# Update
+sudo apt-get update
 # install OpenBLAS
 sudo apt-get install libopenblas-base
 # install ATLAS
