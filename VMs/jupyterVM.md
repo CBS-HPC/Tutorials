@@ -1,3 +1,5 @@
+# UCloud Tutorial: Setting up an interactive jupyter notebook session on AAU VMs
+
 ### Connect to VM using SSH
 
 Open a terminal app on local machine and SSH onto the VM:

@@ -1,23 +1,6 @@
-# UCloud Tutorial: Using Conda for easy deployment on AAU VMs
-
-Introduction text
-
-https://docs.cloud.sdu.dk/hands-on/conda-setup.html?highlight=conda
-
-The Conda package and environment management system is already included in few applications available on UCloud (see, e.g., JupyerLab and PyTorch). For more general uses of Conda and its powerful package manager it is convenient to create a local installation and save it in a UCloud project.
-Conda is included in all versions of Anaconda and Miniconda. For example, to install the latest version of Miniconda, just start any interactive app on UCloud, such as Terminal, and run the following shell commands:
+# UCloud Tutorial: Using Conda for easy workflow deployment on AAU GPU VMs
 
 ## Initial installation of Conda on a AAU VM job
-
-### SSH to Server through local Terminal
-
-Add public SSH key while starting a VM job
-
-![](startjob.png "startjob")
-
-Identify VM IP when UCloud job is ready.
-
-![](jobready.png "jobready")
 
 ### Connect to VM using SSH
 
