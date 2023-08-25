@@ -11,7 +11,7 @@ The following python scripts are needed to replicate this tutorial:
 - [multigpu_torchrun.py](https://github.com/CBS-HPC/Tutorials/tree/main/VMs/multigpu_torchrun.py) (Can be used as template)
 - [datautils.py](https://github.com/CBS-HPC/Tutorials/tree/main/VMs/datautils.py) (Used to load dummy data)
 
-This tutorial assumes that you a familiar with the following documentation regarding the AAU GPU Facilies:
+Prerequisite reading:
 
 - [How to Generate SSH key](/Tutorials/VMs/shh/)
 

@@ -11,7 +11,7 @@ The following python script is needed to replicate this tutorial:
 - [multigpu_torchrun.py](https://github.com/CBS-HPC/Tutorials/tree/main/VMs/multigpu_tensorflow.py) (Can be used as template)
 
 
-This tutorial assumes that you a familiar with the following documentation regarding the AAU GPU Facilies:
+Prerequisite reading:
 
 - [How to Generate SSH key](/Tutorials/VMs/shh/)
 
