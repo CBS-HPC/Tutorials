@@ -8,8 +8,8 @@ This tutorial specifically focuses on [Part 4: Multi-GPU DDP Training with fault
 
 The following python scripts are needed to replicate this tutorial: 
 
-- [multigpu_torchrun.py](https://github.com/CBS-HPC/Tutorials/tree/main/VMs/multigpu_torchrun.py) (Can be used as template)
-- [datautils.py](https://github.com/CBS-HPC/Tutorials/tree/main/VMs/datautils.py) (Used to load dummy data)
+- [multigpu_torchrun.py](https://github.com/CBS-HPC/Tutorials/tree/main/AI/multigpu_torchrun.py) (Can be used as template)
+- [datautils.py](https://github.com/CBS-HPC/Tutorials/tree/main/AI/datautils.py) (Used to load dummy data)
 
 Prerequisite reading:
 

@@ -8,7 +8,7 @@ This tutorial specifically focuses on [Multi-GPU DDP Training with fault toleran
 
 The following python script is needed to replicate this tutorial: 
 
-- [multigpu_torchrun.py](https://github.com/CBS-HPC/Tutorials/tree/main/VMs/multigpu_tensorflow.py) (Can be used as template)
+- [multigpu_torchrun.py](https://github.com/CBS-HPC/Tutorials/tree/main/AI/multigpu_tensorflow.py) (Can be used as template)
 
 
 Prerequisite reading:
