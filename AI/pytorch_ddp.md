@@ -4,7 +4,12 @@ This tutorial show how to apply "Distributed Data Parallel (DDP) in PyTorch" to 
 
 See [here](https://pytorch.org/tutorials/beginner/ddp_series_intro.html) for a more detailed tutorial on DDP using Pytorch.
 
-This tutorial specifically focuses on [Part 4: Multi-GPU DDP Training with fault tolerance using Torchrun](https://pytorch.org/tutorials/beginner/ddp_series_fault_tolerance.html)
+This tutorial specifically focuses on [Part 4: Multi-GPU DDP Training with fault tolerance using Torchrun](https://pytorch.org/tutorials/beginner/ddp_series_fault_tolerance.html). 
+
+The following python scripts are needed to replicate this tutorial: 
+
+- [multigpu_torchrun.py](https://github.com/CBS-HPC/Tutorials/tree/main/VMs/multigpu_torchrun.py) (Can be used as template)
+- [datautils.py](https://github.com/CBS-HPC/Tutorials/tree/main/VMs/datautils.py) (Used to load dummy data)
 
 This tutorial assumes that you a familiar with the following documentation regarding the AAU GPU Facilies:
 

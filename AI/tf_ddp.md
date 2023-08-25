@@ -6,6 +6,11 @@ See [here](https://www.tensorflow.org/guide/keras/distributed_training) for a mo
 
 This tutorial specifically focuses on [Multi-GPU DDP Training with fault tolerance](https://www.tensorflow.org/guide/keras/distributed_training#using_callbacks_to_ensure_fault_tolerance)
 
+The following python script is needed to replicate this tutorial: 
+
+- [multigpu_torchrun.py](https://github.com/CBS-HPC/Tutorials/tree/main/VMs/multigpu_tensorflow.py) (Can be used as template)
+
+
 This tutorial assumes that you a familiar with the following documentation regarding the AAU GPU Facilies:
 
 - [How to Generate SSH key](/Tutorials/VMs/shh/)
@@ -13,6 +18,7 @@ This tutorial assumes that you a familiar with the following documentation regar
 - [Access VM using SSH](/Tutorials/VMs/connectVM/)
 
 - [Using Conda for easy workflow deployment on AAU GPU VMs](/Tutorials/VMs/condaVM/)
+
 
 ### Update VM
 
