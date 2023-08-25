@@ -22,6 +22,7 @@ class Trainer:
         optimizer: torch.optim.Optimizer,
         save_every: int,
         snapshot_path: str,
+        final_model_path: str,  # Add the path for the final model
     ) -> None:
         self.local_rank = int(os.environ["LOCAL_RANK"])
         self.model = model.to(self.local_rank)
@@ -30,6 +31,7 @@ class Trainer:
         self.save_every = save_every
         self.epochs_run = 0
         self.snapshot_path = snapshot_path
+        self.final_model_path = final_model_path
         if os.path.exists(snapshot_path):
             print("Loading snapshot")
             self._load_snapshot(snapshot_path)
@@ -72,7 +74,11 @@ class Trainer:
             self._run_epoch(epoch)
             if self.local_rank == 0 and epoch % self.save_every == 0:
                 self._save_snapshot(epoch)
-
+        
+        # Save the final model
+        if self.local_rank == 0:
+            torch.save(self.model.module.state_dict(), self.final_model_path)
+            print(f"Final model saved at {self.final_model_path}")
 
 def load_train_objs():
     train_set = MyTrainDataset(2048)  # load your dataset
@@ -91,11 +97,11 @@ def prepare_dataloader(dataset: Dataset, batch_size: int):
     )
 
 
-def main(save_every: int, total_epochs: int, batch_size: int, snapshot_path: str = "snapshot.pt"):
+def main(save_every: int, total_epochs: int, batch_size: int, snapshot_path: str = "snapshot.pt",final_model_path: str = "finalmodel.pt"):
     ddp_setup()
     dataset, model, optimizer = load_train_objs()
     train_data = prepare_dataloader(dataset, batch_size)
-    trainer = Trainer(model, train_data, optimizer, save_every, snapshot_path)
+    trainer = Trainer(model, train_data, optimizer, save_every, snapshot_path,final_model_path)
     trainer.train(total_epochs)
     destroy_process_group()
 
