@@ -4,7 +4,7 @@ This tutorial show how to deploy [RAPIDS-cuML-GPU Machine Learning Algorithms](h
 
 "cuML is a suite of libraries that implement machine learning algorithms and mathematical primitives functions. cuML enables data scientists, researchers, and software engineers to run traditional tabular ML tasks on GPUs without going into the details of CUDA programming. For large datasets, these GPU-based implementations can complete 10-50x faster than their CPU equivalents. For details on performance, see the [cuML Benchmarks Notebook](https://github.com/rapidsai/cuml/tree/branch-23.04/notebooks/tools)."
 
- **In most cases, cuML's Python API matches the API from scikit-learn. which will make it easy to navigate to scikit-learn to RAPIDS-cuML**
+ **In most cases, cuML's Python API matches the API from scikit-learn. which will make it easy to navigate from scikit-learn to RAPIDS-cuML**
 
 A table of the supported algoritmns can be found [here](https://github.com/rapidsai/cuml#supported-algorithms). 
 
