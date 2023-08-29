@@ -1,0 +1,25 @@
+---
+title: "WRDS"
+author: "KGP"
+date: "2023-05-25"
+output: html_document
+---
+
+```{r}
+library(RPostgres)
+wrds <- dbConnect(Postgres(),
+                  host='wrds-pgdata.wharton.upenn.edu',
+                  port=9737,
+                  dbname='wrds',
+                  sslmode='require',
+                  user='kgpcbs'
+                  )
+```
+
+
+```{r}
+res <- dbSendQuery(wrds, "select * from crsp.dsf")
+data <- dbFetch(res, n=10)
+dbClearResult(res)
+data
+```
