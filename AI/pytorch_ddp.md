@@ -1,6 +1,6 @@
 # Pytorch: Train your deep-learning models on AAU GPUs
 
-This tutorial show how to apply "Distributed Data Parallel (DDP) in PyTorch" to efficiently train your deep-learning models on the AAU GPUs avalaible through UCloud.
+This tutorial show how to deploy "Distributed Data Parallel (DDP) in PyTorch" to efficiently train your deep-learning models on the AAU GPUs avalaible through UCloud.
 
 See [here](https://pytorch.org/tutorials/beginner/ddp_series_intro.html) for a more detailed tutorial on DDP using Pytorch.
 
@@ -34,11 +34,9 @@ This can be done by either installing a conda from scratch or by deploying er pr
 
 
 ```R
-# Download and install miniconda 
+# Download and install miniconda (If needed)
 curl -s -L -o miniconda_installer.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh 
 bash miniconda_installer.sh -b -f -p miniconda3
-
-# OR 
 
 # Set conda to path
 export PATH=/home/ucloud/miniconda3/bin:$PATH # Set conda to path
@@ -164,6 +162,42 @@ Epoch 10 | Training snapshot saved at snapshot.pt
 [GPU1] Epoch 49 | Batchsize: 32 | Steps: 32
 Final model saved at finalmodel.pt
 ```
+### Track the GPU usage 
+
+```R
+nvidia-smi -l 5 # Will update every 5 seconds
+
+# Expected Output
+Mon Aug  7 09:38:25 2023
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A      1011      G   /usr/lib/xorg/Xorg                  4MiB |
+|    0   N/A  N/A      2312      C   python                           1324MiB |
+|    0   N/A  N/A      2381      C   ...a3/envs/rapids/bin/python     1042MiB |
+|    1   N/A  N/A      1011      G   /usr/lib/xorg/Xorg                  4MiB |
+|    1   N/A  N/A      2383      C   ...a3/envs/rapids/bin/python     1042MiB |
++-----------------------------------------------------------------------------+
+Tue Aug 29 11:04:31 2023
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 525.125.06   Driver Version: 525.125.06   CUDA Version: 12.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Tesla T4            Off  | 00000000:00:05.0 Off |                    0 |
+| N/A   38C    P0    49W /  70W |   2389MiB / 15360MiB |     93%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla T4            Off  | 00000000:00:06.0 Off |                    0 |
+| N/A   36C    P0    53W /  70W |   1067MiB / 15360MiB |     93%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+```
+
 
 ### Transfer Results and Conda enviroment local machine (SSH-Copy)
 Open a second terminal (1st terminal is connected to the VM):
