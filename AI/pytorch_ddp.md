@@ -25,7 +25,7 @@ Prerequisite reading:
 ```R
 sudo apt update
 sudo apt upgrade -y 
-sudo apt install nvidia-headless-460 nvidia-utils-460 -y
+sudo apt install nvidia-driver-525 nvidia-utils-525 -y  # Or newer version
 ```
 
 ### Activate Conda
