@@ -61,7 +61,7 @@ res <- microbenchmark(f(), times=100L)
 res
 ```
 
-# Installing and Chaning BLAS & LAPACK Library
+# Installing and Changing BLAS & LAPACK Library
 
 Select between the available BLAS/LAPACK libraies by posting the command below i the job terminal. 
 
