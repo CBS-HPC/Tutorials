@@ -1,4 +1,16 @@
-# UCloud Tutorial: Using Conda for easy workflow deployment on AAU GPU VMs
+# Conda: for easy workflow deployment on AAU GPU VMs
+
+Package, dependency and environment management for any language—Python, R and [more](https://docs.conda.io/en/latest/).
+
+The following tutorial provides step-by-step guides on how to install and use Conda for R and Python on the AAU GPU VMs available on UCloud.
+
+Using a Conda environement elimnates the need for re-installing all the needed packages/libraries when starting a new AAU GPU VM.
+
+Prerequisite reading:
+
+- [How to Generate SSH key](/Tutorials/VMs/shh/)
+
+- [Access VM using SSH](/Tutorials/VMs/connectVM/)
 
 ## Initial installation of Conda on a AAU VM job
 
@@ -17,7 +29,7 @@ ssh ucloud@IP_address_from_the_red_mark
 ```R
 sudo apt update
 sudo apt upgrade -y 
-sudo apt install nvidia-headless-460 nvidia-utils-460 -y
+sudo apt install nvidia-driver-525 nvidia-utils-525 -y  # Or newer version
 ```
 
 ### Download and Install Conda 
@@ -87,9 +99,9 @@ conda create --name my_env python
 conda activate my_env
 
 # Install cudatoolkit and cudnn
-conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+conda install -c conda-forge cudatoolkit cudnn
 
-# Set pre-installed conda libraries to path (including cudatoolkit=11.2 cudnn=8.1.0 )
+# Set pre-installed conda libraries to path
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/
 
 # install tensorflow

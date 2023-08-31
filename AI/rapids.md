@@ -21,7 +21,7 @@ Prerequisite reading:
 
 - [Access VM using SSH](/Tutorials/VMs/connectVM/)
 
-- [Using Conda for easy workflow deployment on AAU GPU VMs](/Tutorials/VMs/condaVM/)
+- [Conda: for easy workflow deployment on AAU GPU VMs](/Tutorials/VMs/condaVM/)
 
 ### Update VM
 

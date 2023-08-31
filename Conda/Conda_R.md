@@ -1,5 +1,4 @@
 # UCloud Tutorial: Using Conda for easy management of R environments
-Introduction text
 
 https://docs.cloud.sdu.dk/hands-on/conda-setup.html?highlight=conda
 

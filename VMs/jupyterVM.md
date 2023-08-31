@@ -1,4 +1,12 @@
-# UCloud Tutorial: Setting up an interactive jupyter notebook session on AAU VMs
+# Run Python and R jupyter notebooks on AAU VMs
+
+Prerequisite reading:
+
+- [How to Generate SSH key](/Tutorials/VMs/shh/)
+
+- [Access VM using SSH](/Tutorials/VMs/connectVM/)
+
+- [Conda: for easy workflow deployment on AAU GPU VMs](/Tutorials/VMs/condaVM/)
 
 ### Connect to VM using SSH
 
@@ -9,6 +17,32 @@ Open a terminal app on local machine and SSH onto the VM:
 ssh ucloud@IP_address_from_the_red_mark
 ```
 
+## Install or activate Conda installation
+
+See ["Conda: for easy workflow deployment on AAU GPU VMs"](/Tutorials/VMs/condaVM/) for more information.
+
+## Install and/or activate existing Python or R Environment using Conda
+
+
+```R
+# Python 
+conda deactivate
+conda create --name my_env python
+conda activate my_env
+
+# R 
+conda deactivate
+mamba create --solver=libmamba -n myenv -y -c conda-forge r-base
+conda activate my_env
+conda install -c conda-forge r-irkernel
+
+# Install cudatoolkit and cudnn
+conda install -c conda-forge cudatoolkit cudnn
+
+# Set pre-installed conda libraries to path
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/
+```
+
 ### Install jupyter if needed: 
 
 
@@ -17,7 +51,7 @@ ssh ucloud@IP_address_from_the_red_mark
 pip install jupyterlab
 
 # Using conda if conda environment are utilised 
-conda install jupyter
+conda install jupyterlab
 ```
 
 ### Make sure jupyter is installed
@@ -30,6 +64,20 @@ which jupyter
 
 # Example Output:
 /home/ucloud/miniconda3/envs/my_env/bin/jupyter
+```
+
+### R Kernel available to Jupyter
+
+
+```R
+# Activate R
+R
+
+# R command
+IRkernel::installspec()
+
+# Activate R
+quite()
 ```
 
 ### Start Jupyter Notebook from remote server
@@ -64,4 +112,12 @@ Open a 2nd instance of Terminal on Local machine
 ssh -L 8080:localhost:8080 ucloud@IP_address_from_the_red_mark
 ```
 
-### Now press the links in the output above and it should open a jupyter notebook
+### Open Jupyter Notebook
+
+Press the link in the output above and it should open a jupyter notebook
+
+Now the R and Python kernel should be available (see figure below)
+
+![](kernel_choice.PNG "kernel")
+
+![](kernel_choice2.PNG "kernel")
