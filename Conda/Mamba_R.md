@@ -54,14 +54,11 @@ Managing R environment using Conda is facilitated by a add-in library â€œmambaâ€
 https://astrobiomike.github.io/R/managing-r-and-rstudio-with-conda
 
 ```R
-#Showing available R versions
-mamba search -c conda-forge r-base
-
 #Installing a R environment (R-4.2.3 in this example) 
-mamba create --solver=libmamba -n myenv -y -c conda-forge r-base=4.2.3
+conda create --solver=libmamba -n myenv -y -c conda-forge r-base=4.2.3
 
 #Or install packages during installation.
-mamba create --solver=libmamba -n myenv -y -c conda-forge r-base=4.2.3 r-tidyverse
+conda create --solver=libmamba -n myenv -y -c conda-forge r-base=4.2.3 r-tidyverse
 
 #Shows already installed environments ("myenv" should be displayed)
 conda env list
