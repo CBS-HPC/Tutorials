@@ -134,18 +134,13 @@ conda env list
 
 # Activate environment:
 conda activate myenv
-```
 
+# Install iRkernel:
+conda install -c conda-forge r-irkernel
 
-```R
-# Install iRkernel R package:
-
-R install.packages("IRkernel") # Can be problematic to install at this point
+# Activate R Kernel in Jupter
 R -e "IRkernel::installspec(name = 'myenv', displayname = 'myenv')"
-```
 
-
-```R
 # De-activate environment:
 conda deactivate
 ```
