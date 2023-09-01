@@ -102,6 +102,7 @@ conda install -c conda-forge cudatoolkit cudnn
 
 # Set pre-installed conda libraries to path
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/
+```
 
 #### GPU conda environment is ready to use
 
