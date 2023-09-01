@@ -91,7 +91,6 @@ Mon Aug  7 09:38:25 2023
 
 ### Create conda environment and test GPU configuration
 
-
 ```R
 # Create conda environment 
 conda deactivate
@@ -104,21 +103,9 @@ conda install -c conda-forge cudatoolkit cudnn
 # Set pre-installed conda libraries to path
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/
 
-# install tensorflow
-pip install --upgrade pip; pip install tensorflow
-
-# test if tensorflow is probably configurated:
-python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
-python3 -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
-# Expected Output
-2023-08-07 09:58:29.129577: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 13775 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:05.0, compute capability: 7.5
-tf.Tensor(-875.0791, shape=(), dtype=float32)
-```
-
 #### GPU conda environment is ready to use
 
 ### Compress Conda installation to tar.gz file
-
 
 ```R
 tar -czvf /home/ucloud/miniconda3.tar.gz /home/ucloud/miniconda3
@@ -231,21 +218,9 @@ conda create --name my_env python
 conda activate my_env
 
 # Install cudatoolkit and cudnn
-conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+conda install -c conda-forge cudatoolkit cudnn
 
 # Set pre-installed conda libraries to path (including cudatoolkit=11.2 cudnn=8.1.0 )
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/
-
-# install tensorflow
-pip install --upgrade pip; pip install tensorflow
-
-# test if tensorflow is probably configurated:
-python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
-python3 -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
-
-# Expected Output
-2023-08-07 09:58:29.129577: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 13775 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:05.0, compute capability: 7.5
-tf.Tensor(-875.0791, shape=(), dtype=float32)
-```
 
 #### GPU conda environment is ready to use
