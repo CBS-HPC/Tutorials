@@ -27,7 +27,7 @@ See ["Conda: for easy workflow deployment on AAU GPU VMs"](/Tutorials/VMs/condaV
 ```R
 # Python 
 conda deactivate
-conda create --name myenv_python_env python
+conda create --name myenv_python python
 conda activate myenv_python
 conda install ipykernel
 conda install nb_conda_kernels
