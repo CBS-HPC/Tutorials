@@ -27,14 +27,17 @@ See ["Conda: for easy workflow deployment on AAU GPU VMs"](/Tutorials/VMs/condaV
 ```R
 # Python 
 conda deactivate
-conda create --name my_env python
-conda activate my_env
+conda create --name myenv_python_env python
+conda activate myenv_python
+conda install ipykernel
+conda install nb_conda_kernels
 
 # R 
 conda deactivate
-mamba create --solver=libmamba -n myenv -y -c conda-forge r-base
-conda activate my_env
+conda create --solver=libmamba -n myenv_R -y -c conda-forge r-base
+conda activate myenv_R
 conda install -c conda-forge r-irkernel
+conda install nb_conda_kernels
 
 # Install cudatoolkit and cudnn
 conda install -c conda-forge cudatoolkit cudnn
@@ -43,20 +46,7 @@ conda install -c conda-forge cudatoolkit cudnn
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/
 ```
 
-### Install jupyter if needed: 
-
-
-```R
-# Using pip
-pip install jupyterlab
-
-# Using conda if conda environment are utilised 
-conda install jupyterlab
-```
-
-### Make sure jupyter is installed
-
-In this case jupyter is installed and activated through a conda environment. Please see 
+### Check jupyter installtion and get config-directory
 
 
 ```R
@@ -64,27 +54,75 @@ which jupyter
 
 # Example Output:
 /home/ucloud/miniconda3/envs/my_env/bin/jupyter
+
+# Get config-directory
+jupyter --config-dir
+
+# Example Output:
+/home/ucloud/.jupyter/
+
+# Create folder if does not exist
+ mkdir -p /home/ucloud/.jupyter/
+
+# Create jupyter_config.json  in config-dir
+echo '{"CondaKernelSpecManager": {"kernelspec_path": "--user"}}' > /home/ucloud/.jupyter/jupyter_config.json
+
+# Check content of jupyter_config.json
+
+cat /home/ucloud/.jupyter/jupyter_config.json
 ```
 
-### R Kernel available to Jupyter
+### Install nb_conda_kernels
+
+https://github.com/Anaconda-Platform/nb_conda_kernels#installation
 
 
 ```R
-# Activate R
-R
+# Export all existing conda environment with ipykernel or r-irkernel installed
+python -m nb_conda_kernels list
 
-# R command
-IRkernel::installspec()
+# Example Output: 
+[ListKernelSpecs] WARNING | Config option `kernel_spec_manager_class` not recognized by `ListKernelSpecs`.
+[ListKernelSpecs] Removing existing kernelspec in /home/ucloud/.local/share/jupyter/kernels/conda-env-jupyter-py
+[ListKernelSpecs] Installed kernelspec conda-env-jupyter-py in /home/ucloud/.local/share/jupyter/kernels/conda-env-jupyter-py
+[ListKernelSpecs] Installed kernelspec conda-env-my_env-py in /home/ucloud/.local/share/jupyter/kernels/conda-env-my_env-py
+[ListKernelSpecs] Removing existing kernelspec in /home/ucloud/.local/share/jupyter/kernels/conda-env-myenv-py
+[ListKernelSpecs] Installed kernelspec conda-env-myenv-py in /home/ucloud/.local/share/jupyter/kernels/conda-env-myenv-py
+[ListKernelSpecs] Removing existing kernelspec in /home/ucloud/.local/share/jupyter/kernels/conda-env-rapids-py
+[ListKernelSpecs] Installed kernelspec conda-env-rapids-py in /home/ucloud/.local/share/jupyter/kernels/conda-env-rapids-py
+[ListKernelSpecs] [nb_conda_kernels] enabled, 4 kernels found
+Available kernels:
+  conda-env-jupyter-py    /home/ucloud/miniconda3/envs/jupyter/share/jupyter/kernels/python3
+  conda-env-myenv-py      /home/ucloud/miniconda3/envs/myenv/share/jupyter/kernels/python3
+  conda-env-rapids-py     /home/ucloud/miniconda3/envs/rapids/share/jupyter/kernels/python3
+  conda-env-my_env-py     /home/ucloud/miniconda3/envs/my_env/share/jupyter/kernels/python3
+```
 
-# Activate R
-quite()
+### Check that the conda environment kernels are discovered by jupyter:
+
+
+```R
+jupyter kernelspec list
+
+# Example output:
+[ListKernelSpecs] WARNING | Config option `kernel_spec_manager_class` not recognized by `ListKernelSpecs`.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Available kernels:
+  python3                 /home/ucloud/miniconda3/envs/my_env/share/jupyter/kernels/python3
+  conda-env-jupyter-py    /home/ucloud/.local/share/jupyter/kernels/conda-env-jupyter-py
+  conda-env-my_env-py     /home/ucloud/.local/share/jupyter/kernels/conda-env-my_env-py
+  conda-env-myenv-py      /home/ucloud/.local/share/jupyter/kernels/conda-env-myenv-py
+  conda-env-rapids-py     /home/ucloud/.local/share/jupyter/kernels/conda-env-rapids-py
 ```
 
 ### Start Jupyter Notebook from remote server
 
 
 ```R
-jupyter notebook --no-browser --port=8080
+jupyter notebook --no-browser --port=8080 # Change the port number if multiple jupyter notebook are started within the same session
 
 # Output
 
@@ -109,7 +147,7 @@ Open a 2nd instance of Terminal on Local machine
 
 
 ```R
-ssh -L 8080:localhost:8080 ucloud@IP_address_from_the_red_mark
+ssh -L 8080:localhost:8080 ucloud@IP_address_from_the_red_mark # Change the port number if multiple jupyter notebook are started within the same session
 ```
 
 ### Open Jupyter Notebook
