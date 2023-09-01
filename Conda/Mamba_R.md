@@ -77,11 +77,14 @@ which R
 
 
 ```R
-# Install packages:
-R install.packages(“tidymodels”)
+# Start R:
+R
 
-# If the user wish to run this environment with “JupyterLab” then it is advised to install “iRkernel” at this point:
-R install.packages("IRkernel")
+# Install a package
+install.packages(“tidymodels”)
+
+# Close R:
+quit()
 ```
 
 # R Studio on UCloud
