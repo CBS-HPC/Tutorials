@@ -12,7 +12,7 @@ This tutorial will use a random forrest which can be found on the [cuML notebook
 
 The following python script is needed to replicate this tutorial: 
 
-- [multigpu_rapids_cuml.py](https://github.com/CBS-HPC/Tutorials/tree/main/AI/multigpu_rapids.py) (Can be used as template)
+- [multigpu_rapids_cuml.py](https://github.com/CBS-HPC/Tutorials/tree/main/GPU/multigpu_rapids.py) (Can be used as template)
 
 
 Prerequisite reading:
