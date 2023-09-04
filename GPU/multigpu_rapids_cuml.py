@@ -23,8 +23,8 @@ from sklearn.ensemble import RandomForestClassifier as sklRF
 if __name__ == "__main__":
     ### Start Dask cluster
     # This will use all GPUs on the local host by default
-    cluster = LocalCUDACluster(n_workers=2)
-    #cluster = LocalCUDACluster(threads_per_worker=1)
+    num_gpus = len(cudf.DataFrame.from_gpu_matrix(cudf.nvml.nvmlDeviceGetCount()))
+    cluster = LocalCUDACluster(n_workers=num_gpus)
     c = Client(cluster)
 
     # Query the client for all connected workers
@@ -32,7 +32,6 @@ if __name__ == "__main__":
     n_workers = len(workers)
     n_streams = 8 # Performance optimization
 
-    ### Define Parameters
     # Data parameters
     train_size = 500000
     test_size = 1000
@@ -53,8 +52,6 @@ if __name__ == "__main__":
     X_train, X_test, y_train, y_test = model_selection.train_test_split(X, y, test_size=test_size)
 
     ### Distribute data to worker GPUs
-    n_partitions = n_workers
-
     def distribute(X, y):
         # First convert to cudf (with real data, you would likely load in cuDF format to start)
         X_cudf = cudf.DataFrame(X)
@@ -62,8 +59,8 @@ if __name__ == "__main__":
 
         # Partition with Dask
         # In this case, each worker will train on 1/n_partitions fraction of the data
-        X_dask = dask_cudf.from_cudf(X_cudf, npartitions=n_partitions)
-        y_dask = dask_cudf.from_cudf(y_cudf, npartitions=n_partitions)
+        X_dask = dask_cudf.from_cudf(X_cudf, npartitions=n_workers)
+        y_dask = dask_cudf.from_cudf(y_cudf, npartitions=n_workers)
 
         # Persist to cache the data in active memory
         X_dask, y_dask = \
@@ -74,24 +71,21 @@ if __name__ == "__main__":
     X_train_dask, y_train_dask = distribute(X_train, y_train)
     X_test_dask, y_test_dask = distribute(X_test, y_test)
 
-    ### Build a scikit-learn model (single node)
-    # Use all available CPU cores
-    #start_time = time.perf_counter()
-    #skl_model = sklRF(max_depth=max_depth, n_estimators=n_trees, n_jobs=-1)
-    #skl_model.fit(X_train.get(), y_train.get())
-    #finish_time = time.perf_counter()
-    #print(finish_time-start_time)
-    ### Predict
-    #skl_y_pred = skl_model.predict(X_test.get())
-    #print("SKLearn accuracy:  ", accuracy_score(y_test, skl_y_pred))
-
     ### Train the distributed cuML model
-    start_time = time.perf_counter()
+    start_time = time.perf_counter() # Start time
     cuml_model = cumlDaskRF(max_depth=max_depth, n_estimators=n_trees, n_bins=n_bins, n_streams=n_streams)
     cuml_model.fit(X_train_dask, y_train_dask)
     wait(cuml_model.rfs) # Allow asynchronous training tasks to finishfinish_time = time.perf_counter()
     finish_time = time.perf_counter()
-    print(finish_time-start_time)
-    ### Predict
+    print(finish_time-start_time)  # End time
     cuml_y_pred = cuml_model.predict(X_test_dask).compute().to_numpy()
     print("CuML accuracy:     ", accuracy_score(y_test, cuml_y_pred))
+
+    ### Build a scikit-learn model (single node)
+    #start_time = time.perf_counter() # Start time
+    #skl_model = sklRF(max_depth=max_depth, n_estimators=n_trees, n_jobs=-1)
+    #skl_model.fit(X_train.get(), y_train.get())
+    #finish_time = time.perf_counter()  # End time
+    #print(finish_time-start_time)  # End time
+    #skl_y_pred = skl_model.predict(X_test.get())
+    #print("SKLearn accuracy:  ", accuracy_score(y_test, skl_y_pred))
