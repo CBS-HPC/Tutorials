@@ -20,7 +20,7 @@ Add a bash script(.sh) under "Batch processing" as one of the "Optional Paramete
 ![img7](images/img7.PNG)
 
 
-Below shown bash script can be downloaded from [here](batchscript.sh). Use this as a template or [create your own bash script](https://www.howtogeek.com/261591/how-to-create-and-run-bash-shell-scripts-on-windows-10/).
+Below shown bash script can be downloaded from [here](https://github.com/CBS-HPC/Tutorials/blob/main/STATA/batchscript.sh). Use this as a template or [create your own bash script](https://www.howtogeek.com/261591/how-to-create-and-run-bash-shell-scripts-on-windows-10/).
 
 More information on how to run Stata in batch mode can be found here: https://www.stata.com/support/faqs/unix/batch-mode/
 
