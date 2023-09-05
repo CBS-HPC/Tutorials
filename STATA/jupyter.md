@@ -1,78 +1,25 @@
-# Install Stata on UCloud
+# Run Stata in jupyter-notebooks
 
-This is a guide on how to install Stata on UCloud.
+This is a guide shows how to setup "pystata" in order to run Stata in Python using jupyter notebooks.
 
-# Get Stata license and Installation file (CBS Users)
-
-Follow the instructions to get a Stata license at CBS https://studentcbs.sharepoint.com/sites/ITandCampus/SitePages/en/Free-software.aspx
-
-You will recieve an email with license and installation information (see image below).
-
-![img1](images/img1.PNG)
-
- Download the installation file (Stata17Linux64.tar) and upload this to your UCloud directory.
-
-![img2](images/img2.PNG)
+For more in depth decumnetation see [here](https://www.stata.com/python/pystata18/notebook/Quick%20Start0.html)
 
 
+Prerequisite reading:
 
-# Installing Stata on UCloud
+- [Install Stata on UCloud](/Tutorials/STATA/install/)
 
-### Launch a "Terminal App" UCloud Job and include the stata installation file (Stata17Linux64.tar)
-
-![img3](images/img3.PNG)
-
-Run following commands in the terminal: 
-
-
-```R
-
-# Install dependencies
-sudo dpkg --add-architecture i386
-sudo apt-get update
-sudo apt-get install libncurses5 libncurses5:i386 -y
-
-# Unzip installation file to temp folder
-sudo -s
-mkdir /tmp/statafiles
-cd /tmp/statafiles
-tar -zxf /work/install/Stata17Linux64.tar.gz
-
-# Install Stata on in "/work/stata17". Say yes when asked during installtion
-mkdir /work/stata17 
-cd /work/stata17 
-/tmp/statafiles/install
-
-# Set stata to Unix path
-export PATH="/work/stata17:$PATH"
-
-# Initialize Stata
-sudo /work/stata17/stinit
-
-# Follow instructions and add "Serial number", "Code" and "Authorization" from the Stata license mail
-
-# Check stata installation
-which stata
-
-# Run stata
-stata 
-# or
-stata-se
-# or
-stata-mp
-```
-
-### End job and copy the “stata17” folder from UCloud “Job” folder to a folder you want within your UCloud directory.
-
-![img4](images/img4.PNG)
-
-## Activate Stata installation in a new terminal job
+## Start a Jupyter Job in UCloud
 
 Add the stata17 folder to the job
 
-![](startjob2.PNG)
+![](images/jupyter1.PNG)
 
+# Activate Stata and install stata-setup
 
+Open the Terminal and run the code snippets below.
+
+![](images/jupyter2.PNG)
 
 
 ```R
@@ -87,10 +34,85 @@ export PATH="/work/stata17:$PATH"
 # Check stata installation
 which stata
 
-# Run stata
-stata 
-# or
-stata-se
-# or
-stata-mp
+# Example Output
+/work/stata17/stata # use later
+
+# Install stata-setup using pip
+pip install stata-setup
+
+# Install pystata using pip
+pip install pystata
 ```
+
+
+# Run Stata in a Jupyter notebook
+
+## Start Jupyter interface
+![](images/jupyter3.PNG)
+## Open a new python notebook
+![](images/jupyter4.PNG)
+
+
+## Configure the stata installation
+
+
+```R
+import stata_setup
+
+stata_setup.config("/work/stata17", "se")
+
+# Output
+
+  ___  ____  ____  ____  ____ ®
+ /__    /   ____/   /   ____/      17.0
+___/   /   /___/   /   /___/       SE—Standard Edition
+
+ Statistics and Data Science       Copyright 1985-2021 StataCorp LLC
+                                   StataCorp
+                                   4905 Lakeway Drive
+                                   College Station, Texas 77845 USA
+                                   800-STATA-PC        https://www.stata.com
+                                   979-696-4600        stata@stata.com
+
+Stata license: Unlimited-user network, expiring 27 Dec 2023
+Serial number: 401709301397
+  Licensed to: Kristoffer Gulmark Poulsen
+               CBS Account
+
+Notes:
+      1. Unicode is supported; see help unicode_advice.
+      2. Maximum number of variables is set to 5,000; see help set_maxvar.
+```
+
+## Run your code using the stata magic (%%stata) the Configure the stata installation
+
+"%%stata" - cell magic is used to execute Stata code within a cell.
+
+"%stata" - line magic provides users a quick way to execute a single-line Stata command.
+
+Find more information on the stata magic [here](https://www.stata.com/python/pystata18/notebook/Quick%20Start0.html).
+
+
+```R
+%%stata
+
+sysuse auto, clear
+
+summarize mpg
+
+# Output
+. 
+. sysuse auto, clear
+(1978 automobile data)
+
+. 
+. summarize mpg
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+         mpg |         74     21.2973    5.785503         12         41
+
+. 
+```
+
+![](images/jupyter5.PNG)

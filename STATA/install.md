@@ -2,7 +2,7 @@
 
 This is a guide on how to install Stata on UCloud.
 
-# Get Stata license and Installation file (CBS Users)
+## Get Stata license and Installation file (CBS Users)
 
 Follow the instructions to get a Stata license at CBS https://studentcbs.sharepoint.com/sites/ITandCampus/SitePages/en/Free-software.aspx
 
@@ -15,8 +15,7 @@ You will recieve an email with license and installation information (see image b
 ![img2](images/img2.PNG)
 
 
-
-# Installing Stata on UCloud
+## Installing Stata on UCloud
 
 ### Launch a "Terminal App" UCloud Job and include the stata installation file (Stata17Linux64.tar)
 
@@ -24,9 +23,7 @@ You will recieve an email with license and installation information (see image b
 
 Run following commands in the terminal: 
 
-
 ```R
-
 # Install dependencies
 sudo dpkg --add-architecture i386
 sudo apt-get update
@@ -71,9 +68,6 @@ stata-mp
 Add the stata17 folder to the job
 
 ![](startjob2.PNG)
-
-
-
 
 ```R
 # Install dependencies
