@@ -141,7 +141,7 @@
     - [SklearnRay.py](https://github.com/CBS-HPC/Tutorials/blob/main/SLURM/SLURM_scripts/SklearnRay.py)
 
     #### Dask (Python)
-    - [slurm-template_dask.sh](https://github.com/CBS-HPC/Tutorials/blob/main/SLURM://github.com/CBS-HPC/UCloud_SlurmCluster/blob/main/SLURM_deployment/slurm-template_dask.sh)
+    - [slurm-template_dask.sh](https://github.com/CBS-HPC/Tutorials/blob/main/SLURM/SLURM_deployment/slurm-template_dask.sh)
     - [SklearnDask.py](https://github.com/CBS-HPC/Tutorials/blob/main/SLURM/SLURM_scripts/SklearnDask.py)
 
     #### doParallel (R)
