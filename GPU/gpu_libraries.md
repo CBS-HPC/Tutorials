@@ -1,5 +1,8 @@
 # GPU libraries
 
+The list of GPU libraries and packages provided below are by no means exhaustive, and the world of GPU-accelerated computing is continually evolving. Users are encouraged to conduct their own due diligence, explore additional packages, and stay updated with the latest developments in the GPU computing ecosystem to best suit their specific requirements and project needs.
+
+
 === "Python"
     <br />
       
