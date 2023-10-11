@@ -1,4 +1,4 @@
-# Pyton GPU libraries
+# GPU libraries
 
 === "Python"
     <br />
@@ -21,7 +21,7 @@
 
       9. [**MXNet**](https://mxnet.apache.org/) - A deep learning framework known for its flexibility and efficiency in training neural networks on GPUs.
 
-      10. [**Cupy-cuBLAS**](https://github.com/cupy/cupy-cublas) - An extension of CuPy that provides GPU-accelerated linear algebra operations using the cuBLAS library.
+      10. [**Cupy-cuBLAS**](https://cupy.dev/) - An extension of CuPy that provides GPU-accelerated linear algebra operations using the cuBLAS library.
 
       Note: Make sure to check the official websites or repositories of these libraries for the latest installation instructions and documentation.
 
@@ -29,29 +29,25 @@
 === "R"
     <br />
       
-      1. [**gputools**](https://cran.r-project.org/package=gputools) - Provides GPU-based tools for data manipulation, including matrix operations and basic statistics.
+      1. [**gputools**](https://rdrr.io/cran/gputools/) - Provides GPU-based tools for data manipulation, including matrix operations and basic statistics.
 
-      2. [**gpuR**](https://cran.r-project.org/package=gpuR) - Offers GPU support for matrix operations and linear algebra in R.
+      2. [**gpuR**](https://github.com/cdeterman/gpuR) - Offers GPU support for matrix operations and linear algebra in R.
 
-      3. [**RapidsR**](https://github.com/RapidsAI/RapidsR) - An R interface to the RAPIDS suite of GPU-accelerated data science libraries developed by NVIDIA, including cuDF and cuML.
+      3. [**RapidsR**](https://mlverse.github.io/cuda.ml/) - An R interface to the RAPIDS suite of GPU-accelerated data science libraries developed by NVIDIA, including cuDF and cuML.
 
       4. [**mxnet**](https://mxnet.apache.org/) - The R interface to the MXNet deep learning framework, which allows you to train and deploy neural networks on GPUs.
 
       5. [**tensorflow**](https://tensorflow.rstudio.com/) - The R interface to TensorFlow, a popular deep learning framework with GPU support.
 
-      6. [**cudaBayesreg**](https://cran.r-project.org/package=cudaBayesreg) - A package for Bayesian regression analysis with GPU support.
+      6. [**cudaBayesreg**](https://github.com/cran/cudaBayesreg) - A package for Bayesian regression analysis with GPU support.
 
-      7. [**parGPF**](https://cran.r-project.org/package=parGPF) - Provides parallel computing on GPUs for Gaussian process regression in R.
+      7. [**gpuMagic**](https://www.bioconductor.org/packages/release/bioc/html/gpuMagic.html) - A package for general-purpose GPU computing in R.
 
-      8. [**gpuRandomForest**](https://cran.r-project.org/package=gpuRandomForest) - GPU-accelerated implementation of random forests for high-performance classification and regression.
+      8. [**H2O4GPU**](https://github.com/h2oai/h2o4gpu) - A GPU-accelerated machine learning library for R, offering a wide range of machine learning algorithms optimized for GPUs.
 
-      9. [**RApiSerialize**](https://cran.r-project.org/package=RApiSerialize) - An R/C++ library for efficient serialization, which can be useful in conjunction with GPU computing.
+      9. [**Rtorch**](https://torch.mlverse.org/) - An R interface to PyTorch, a popular deep learning framework, allowing you to create and train neural networks on GPUs.
 
-      10. [**gpuMagic**](https://cran.r-project.org/package=gpuMagic) - A package for general-purpose GPU computing in R.
-
-      11. [**H2O4GPU**](https://github.com/h2oai/h2o4gpu) - A GPU-accelerated machine learning library for R, offering a wide range of machine learning algorithms optimized for GPUs.
-
-      12. [**Rtorch**](https://github.com/r-torch/Rtorch) - An R interface to PyTorch, a popular deep learning framework, allowing you to create and train neural networks on GPUs.
+      10. [**gmatrix**](https://github.com/njm18/gmatrix) - Offers GPU support for matrix operations and linear algebra in R.
 
       Note: Some of these packages may require specific GPU hardware and dependencies. Be sure to check the official documentation and package repositories for installation instructions and system requirements.
 
