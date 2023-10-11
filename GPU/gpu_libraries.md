@@ -2,6 +2,7 @@
 
 === "Python"
     <br />
+      
       1. **CUDA Toolkit**: [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit)
          - Description: The official parallel computing platform and API developed by NVIDIA for GPU acceleration.
 
@@ -37,6 +38,7 @@
 
 === "R"
     <br />
+      
       1. **gputools**: [gputools](https://cran.r-project.org/package=gputools)
          - Description: Provides GPU-based tools for data manipulation, including matrix operations and basic statistics.
 
