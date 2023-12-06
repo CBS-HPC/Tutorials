@@ -22,17 +22,17 @@ In summary, the BLAS and LAPACK libraries are essential components for numerical
 
 When looking at the different R/RStudio version available on UCloud (see below) it can be observed that some have the suffix "_MKL". These have "Intel MKL" as their default BLAS/LAPACK library, while versions with out the suffix have the "LibBLAST" library whihc is the base R library on linux systems.
 
-![](Rstudio_Ucloud1.PNG)
+![](/Tutorials/BLAS/Rstudio_Ucloud1.PNG)
 
 ### Use the "sessionInfo()" function to check which BLAS/LAPACK library is deployed:
 
 **MKL**
 
-![](sessionInfo_1.PNG)
+![](/Tutorials/BLAS/sessionInfo_1.PNG)
 
 **LibBLAS**
 
-![](sessionInfo_2.PNG)
+![](/Tutorials/BLAS/sessionInfo_2.PNG)
 
 # Benchmarking the two versions
 
@@ -40,11 +40,11 @@ When looking at the different R/RStudio version available on UCloud (see below) 
 
 **MKL** mean = 7.63 milliseconds
 
-![](benchmark_1.PNG)
+![](/Tutorials/BLAS/benchmark_1.PNG)
 
 **LiBLAS** mean = 592.666 milliseconds
 
-![](benchmark_2.PNG)
+![](/Tutorials/BLAS/benchmark_2.PNG)
 
 
 
@@ -124,5 +124,5 @@ Press <enter> to keep the current choice[*], or type selection number: ^C
 
 Open R and confirm the change of BLAS/LAPACK library using "sessionInfo()" function.
 
-![](sessionInfo_3.PNG)
+![](/Tutorials/BLAS/sessionInfo_3.PNG)
 
