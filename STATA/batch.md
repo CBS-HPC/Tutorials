@@ -12,12 +12,12 @@ Prerequisite reading:
 
 Add the "stata17" and other relevant folder to the job:
 
-![img5](images/img5.PNG)
+![img5](/Tutorials/STATA/images/img5.PNG)
 
 Add a bash script(.sh) under "Batch processing" as one of the "Optional Parameters":
 
-![img6](images/img6.PNG)
-![img7](images/img7.PNG)
+![img6](/Tutorials/STATA/images/img6.PNG)
+![img7](/Tutorials/STATA/images/img7.PNG)
 
 
 Below shown bash script can be downloaded from [here](https://github.com/CBS-HPC/Tutorials/blob/main/STATA/batchscript.sh). Use this as a template or [create your own bash script](https://www.howtogeek.com/261591/how-to-create-and-run-bash-shell-scripts-on-windows-10/).

@@ -23,7 +23,7 @@ bash /tmp/miniconda_installer.sh -b -f -p /work/miniconda3
 
 ### When the job is finished copy the “miniconda3” folder from UCloud “Job” folder to a folder you want within your UCloud project.
 
-![](folder1.PNG "folder1")
+![](/Tutorials/Conda/folder1.PNG "folder1")
 
 ## Activating Conda in a new UCloud Job
 
@@ -95,7 +95,7 @@ Make sure that Rstudio UCloud job is based on the save R version ad the installe
 
 Navigate to the R console: 
 
-![](rconsole.PNG "rconsole")
+![](/Tutorials/Conda/rconsole.PNG "rconsole")
 
 
 
@@ -150,7 +150,7 @@ conda deactivate
 
 ### Now you can launch JupyterLab interface and the “myenv” environment should be available on the frontpage.
 
-![](jupyterR.PNG "jupyterR")
+![](/Tutorials/Conda/jupyterR.PNG "jupyterR")
 
 # Terminal app on UCloud
 

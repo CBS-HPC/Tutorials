@@ -8,18 +8,18 @@ Follow the instructions to get a Stata license at CBS https://studentcbs.sharepo
 
 You will recieve an email with license and installation information (see image below).
 
-![img1](images/img1.PNG)
+![img1](/Tutorials/STATA/images/img1.PNG)
 
  Download the installation file (Stata17Linux64.tar) and upload this to your UCloud directory.
 
-![img2](images/img2.PNG)
+![img2](/Tutorials/STATA/images/img2.PNG)
 
 
 ## Installing Stata on UCloud
 
 ### Launch a "Terminal App" UCloud Job and include the stata installation file (Stata17Linux64.tar)
 
-![img3](images/img3.PNG)
+![img3](/Tutorials/STATA/images/img3.PNG)
 
 Run following commands in the terminal: 
 
@@ -61,13 +61,11 @@ stata-mp
 
 ### End job and copy the “stata17” folder from UCloud “Job” folder to a folder you want within your UCloud directory.
 
-![img4](images/img4.PNG)
+![img4](/Tutorials/STATA/images/img4.PNG)
 
 ## Activate Stata installation in a new terminal job
 
 Add the stata17 folder to the job
-
-![](startjob2.PNG)
 
 ```R
 # Install dependencies

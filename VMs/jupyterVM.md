@@ -156,6 +156,6 @@ Press the link in the output above and it should open a jupyter notebook
 
 Now the R and Python kernel should be available (see figure below)
 
-![](kernel_choice.PNG "kernel")
+![](/Tutorials/VMs/kernel_choice.PNG "kernel")
 
-![](kernel_choice2.PNG "kernel")
+![](/Tutorials/VMs/kernel_choice2.PNG "kernel")

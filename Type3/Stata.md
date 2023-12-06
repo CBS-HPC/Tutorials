@@ -12,11 +12,11 @@ Follow the instructions to get a Stata license at CBS https://studentcbs.sharepo
 
 You will recieve an email with license and installation information (see image below).
 
-![](images/stata1.PNG)
+![](/Tutorials/Type3/images/stata1.PNG)
 
  Download the installation file (Stata17Linux64.tar) and upload this to your UCloud directory.
 
-![](images/stata2.PNG)
+![](/Tutorials/Type3/images/stata2.PNG)
 
 ## Installing Stata on Type 3
 
@@ -107,13 +107,13 @@ Notes:
 
 ## “stata17” and "easybuild" will not be placed on the Hippo Home folder
 
-![](images/stata3.PNG)
+![](/Tutorials/Type3/images/stata3.PNG)
 
 ## Activate Stata on a new Type 3 Job
 
 Add the stata17 folder to the job
 
-![](images/stata4.PNG)
+![](/Tutorials/Type3/images/stata4.PNG)
 
 
 ```R
@@ -178,13 +178,13 @@ ipython kernel install --name myenv_stata --user # Make python available to Jupy
 # Run Stata in a Jupyter notebook
 
 ## Start Jupyter interface
-![](images/stata5.PNG)
+![](/Tutorials/Type3/images/stata5.PNG)
 
 ## Add token to open jupyter
-![](images/stata6.PNG)
+![](/Tutorials/Type3/images/stata6.PNG)
 
 ## Open a new python notebook
-![](images/stata7.PNG)
+![](/Tutorials/Type3/images/stata7.PNG)
 
 ## Configure the stata installation
 
@@ -246,4 +246,4 @@ summarize mpg
          mpg |         74     21.2973    5.785503         12         41
 ```
 
-![](images/stata8.PNG)
+![](/Tutorials/Type3/images/stata8.PNG)

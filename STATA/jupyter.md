@@ -13,13 +13,13 @@ Prerequisite reading:
 
 Add the stata17 folder to the job
 
-![](images/jupyter1.PNG)
+![](/Tutorials/STATA/images/jupyter1.PNG)
 
 # Activate Stata and install stata-setup
 
 Open the Terminal and run the code snippets below.
 
-![](images/jupyter2.PNG)
+![](/Tutorials/STATA/images/jupyter2.PNG)
 
 
 ```R
@@ -48,9 +48,9 @@ pip install pystata
 # Run Stata in a Jupyter notebook
 
 ## Start Jupyter interface
-![](images/jupyter3.PNG)
+![](/Tutorials/STATA/images/jupyter3.PNG)
 ## Open a new python notebook
-![](images/jupyter4.PNG)
+![](/Tutorials/STATA/images/jupyter4.PNG)
 
 
 ## Configure the stata installation
@@ -115,4 +115,4 @@ summarize mpg
 . 
 ```
 
-![](images/jupyter5.PNG)
+![](/Tutorials/STATA/images/jupyter5.PNG)

@@ -14,12 +14,12 @@
     In this example Conda is used for package and evironment management. Check here for more information on [Conda on UCloud]().
 
 
-    ![](images/SLURM1.PNG)
+    ![](/Tutorials/SLURM/images/SLURM1.PNG)
 
 
     ### When the job has started open Terminal for Node 1 
 
-    ![](images/SLURM2.PNG)
+    ![](/Tutorials/SLURM/images/SLURM2.PNG)
 
     Run following commands in the terminal: 
 
@@ -120,15 +120,15 @@
     ```
 
     ### Open extra terminal for the three nodes 
-    ![](images/SLURM3.PNG)
+    ![](/Tutorials/SLURM/images/SLURM3.PNG)
 
     ### Run "top" command is used to show the Linux processes.
-    ![](images/SLURM4.PNG)
+    ![](/Tutorials/SLURM/images/SLURM4.PNG)
 
     ### Observed that the work is distibuted across all three nodes. 
     This may look different for different frameworks (e.g. Ray, Dask, R). It should be noted that in this example on 8 core nodes were used. Full nodes (64 cores) will generate alot more processes.
 
-    ![](images/SLURM5.PNG)
+    ![](/Tutorials/SLURM/images/SLURM5.PNG)
 
 === "Files"
     ### Files 
