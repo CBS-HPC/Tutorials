@@ -23,7 +23,7 @@ bash /tmp/miniconda_installer.sh -b -f -p /work/miniconda3
 
 ### When the job is finished copy the “miniconda3” folder from UCloud “Job” folder to a folder you want within your UCloud project.
 
-![](folder1.PNG "folder1")
+![](/Tutorials/Conda/folder1.PNG "folder1")
 
 ## Activating Conda in a new UCloud Job
 
@@ -117,11 +117,11 @@ which python
 
 Select the menu View -> Command Palette:
 
-![](vscode1.png "vscod1")
+![](/Tutorials/Conda/vscode1.png "vscod1")
 
 Execute the command > Python: Select Intepreter:
 
-![](vscode2.png "vscode2")
+![](/Tutorials/Conda/vscode2.png "vscode2")
 
 
 # JupyterLab on UCloud
@@ -166,7 +166,7 @@ conda deactivate
 
 ### Now you can launch JupyterLab interface and the “myenv” environment should be available on the frontpage.
 
-![](jupyterP.PNG "jupyterP")
+![](/Tutorials/Conda/jupyterP.PNG "jupyterP")
 
 # Terminal app on UCloud
 
