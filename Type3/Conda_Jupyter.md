@@ -49,10 +49,10 @@ R -e "IRkernel::installspec(name = 'myenv_R', displayname = 'myenv_R')" # Make R
 ```
 
 ## Start Jupyter interface
-![](images/stata5.PNG)
+![](/Tutorials/Type3/images/stata5.PNG)
 
 ## Add token to open jupyter
-![](images/stata6.PNG)
+![](/Tutorials/Type3/images/stata6.PNG)
 
 ## Now the conda environments are available as a Jupyter Kernel
-![](images/stata7.PNG)
+![](/Tutorials/Type3/images/stata7.PNG)
