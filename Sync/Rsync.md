@@ -73,20 +73,20 @@ vim /home/user/.ssh/id_rsa.pub
 # highlight public key with mouse and copy using "ctrl+c"
 ```
 
-![](/Tutorials/Sync/image1.PNG)
+![](/Tutorials/Sync/Image1.PNG)
 
 ## Add public SSH key to UCloud
 
 ### Step 1: On UCloud go to "Resources -> SHH-Keys -> Create SSH key" 
 
-![](/Tutorials/Sync/image2.PNG)
+![](/Tutorials/Sync/Image2.PNG)
 
 ### Step 2: Paste pulic key, give a meaningful name and press "Add SSH key". 
 
-![](/Tutorials/Sync/image3.PNG)
+![](/Tutorials/Sync/Image3.PNG)
 
 
-![](/Tutorials/Sync/image4.PNG)
+![](/Tutorials/Sync/Image4.PNG)
 
 
 More information can be found in the UCloud [documentation](https://docs.cloud.sdu.dk/Apps/general_settings.html#configure-ssh-access).
@@ -96,11 +96,11 @@ More information can be found in the UCloud [documentation](https://docs.cloud.s
 
 ### Step 1: Start Rsync Job by filling out the necessary fields
 
-![](/Tutorials/Sync/image5.PNG)
+![](/Tutorials/Sync/Image5.PNG)
 
 ### Step 2: When job ready please locate the SSH port which is randomly generated. In the cas below the SHH port is 2167.
 
-![](/Tutorials/Sync/image6.PNG)
+![](/Tutorials/Sync/Image6.PNG)
 
 ## Connect from local machine using SSH.
 
@@ -118,7 +118,7 @@ ssh ucloud@ssh.cloud.sdu.dk -p 2167
 
 If sucessfull you should get the output shown in the figure below.
 
-![](/Tutorials/Sync/image7.PNG)
+![](/Tutorials/Sync/Image7.PNG)
 
 ## Transfer data using Rsync
 
