@@ -8,9 +8,6 @@ Rsync also offers several advanced features, such as compression, encryption, an
 
 With its flexibility, speed, and efficient use of network resources, Rsync has become a go-to tool for tasks like backup and mirroring, remote file distribution, and content deployment. It has a command-line interface, making it scriptable and suitable for both one-time transfers and automated, scheduled tasks.
 
-
-
-
 [UCloud documentation on Rsync](https://docs.cloud.sdu.dk/Apps/rsync.html)
 
 # Installing Ubuntu on local machine (For Windows)
