@@ -8,9 +8,9 @@ Using a Conda environement elimnates the need for re-installing all the needed p
 
 Prerequisite reading:
 
-- [How to Generate SSH key](/Tutorials/VMs/shh/)
+- [How to Generate SSH key](/Tutorials/SHH/shh_create/)
 
-- [Access VM using SSH](/Tutorials/VMs/connectVM/)
+- [Access VM using SSH](/Tutorials/SSH/ssh_connect/)
 
 ## Initial installation of Conda on a AAU VM job
 

@@ -4,7 +4,7 @@ This is a guide on how to install Stata on DieC large memory HPC/TYPE 3 (Hippo).
 
 Prerequisite reading:
 
-- [Using Conda for easy management of Python and R environments](/Tutorials/VMs/shh/)
+- [Using Conda for easy management of Python and R environments](/Tutorials/SHH/shh_create/)
 
 ## Get Stata license and Installation file (CBS Users)
 
@@ -159,7 +159,7 @@ Notes:
 
 ## Create a Conda Stata environment
 
-Assumes that miniconda3 has been installed. For more information on how to install conda on Type 3 see [here](/Tutorials/VMs/shh/).
+Assumes that miniconda3 has been installed. For more information on how to install conda on Type 3 see [here](/Tutorials/SHH/shh_create/).
 
 
 

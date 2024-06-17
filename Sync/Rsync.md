@@ -21,7 +21,7 @@ In this guide we will use Rsync through Ubuntu. For more infomation and video tu
 
 Despite already having a shh-key (in your windows environment) the easiest will be to create a new SSH-key within your Ubuntu environment. Open a terminal and follow the few steps below.
 
-More information on how to generate a SSH key can be found [here](/Tutorials/VMs/shh/)
+More information on how to generate a SSH key can be found [here](/Tutorials/SHH/shh_create/)
 
 
 

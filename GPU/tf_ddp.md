@@ -13,9 +13,9 @@ The following python script is needed to replicate this tutorial:
 
 Prerequisite reading:
 
-- [How to Generate SSH key](/Tutorials/VMs/shh/)
+- [How to Generate SSH key](/Tutorials/SHH/shh_create/)
 
-- [Access VM using SSH](/Tutorials/VMs/connectVM/)
+- [Access VM using SSH](/Tutorials/SSH/ssh_connect/)
 
 - [Conda: for easy workflow deployment on AAU GPU VMs](/Tutorials/VMs/condaVM/)
 
