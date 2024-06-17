@@ -2,12 +2,12 @@
 
 Add public SSH key while starting a VM job
 
-![](/Tutorials/VMs/startjob.png "startjob")
+![](/Tutorials/SSH/startjob.png "startjob")
 
 
 Identify VM IP when UCloud job is ready.
 
-![](/Tutorials/VMs/jobready.png "jobready")
+![](/Tutorials/SSH/jobready.png "jobready")
 
 
 ## From Local Terminal connect to VM by:
