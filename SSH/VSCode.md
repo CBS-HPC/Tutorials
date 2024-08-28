@@ -1,9 +1,5 @@
-# UCloud Tutorial: Using Conda for easy management of Python environments
+# UCloud Tutorial: SSH Connection to UCloud using VSCode
 
-https://docs.cloud.sdu.dk/hands-on/conda-setup.html?highlight=conda
-
-The Conda package and environment management system is already included in few applications available on UCloud (see, e.g., JupyerLab and PyTorch). For more general uses of Conda and its powerful package manager it is convenient to create a local installation and save it in a UCloud project.
-Conda is included in all versions of Anaconda and Miniconda. For example, to install the latest version of Miniconda, just start any interactive app on UCloud, such as Terminal, and run the following shell commands:
 
 ![](/Tutorials/SSH/image1.PNG)
 
