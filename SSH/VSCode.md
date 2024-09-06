@@ -29,8 +29,9 @@ Prerequisite reading:
 
 ### Step 2: Paste pulic key, give a meaningful name and press "Add SSH key". 
 
-![](/Tutorials/SSH/image3.PNG)
+![](/Tutorials/SSH/image1.PNG)
 
+![](/Tutorials/SSH/image3.PNG)
 
 ![](/Tutorials/SSH/image4.PNG)
 
