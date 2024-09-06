@@ -1,4 +1,22 @@
-# UCloud Tutorial: SSH Connection to UCloud using VSCode
+# UCloud Tutorial: SSH Connection to UCloud using Terminal or VSCode
+
+Direct SSH Connection is available for a range of different UCloud applications: 
+
+- [Terminal](https://cloud.sdu.dk/app/jobs/create?app=terminal-ubuntu)
+- [Coder](https://cloud.sdu.dk/app/jobs/create?app=coder)
+- [RStudio](https://cloud.sdu.dk/app/jobs/create?app=rstudio)
+- [JupyterLab](https://cloud.sdu.dk/app/jobs/create?app=jupyter-all-spark)
+- [Ubuntu Xfce - virtual desktop environment](https://cloud.sdu.dk/app/jobs/create?app=ubuntu-xfce)
+- [AlmaLinux Xfce - virtual desktop environment](https://cloud.sdu.dk/app/jobs/create?app=almalinux-xfce)
+
+
+This tutorial provided a step-by-step guide on how to connect the UCloud application directly to a Terminal or VSCode application on your local PC. 
+
+It will also be shown how to setup a conda environment and how to run a jupyter notebook through VSCode.
+
+Prerequisite reading:
+
+- [How to Generate SSH key](/Tutorials/SHH/shh_create/)
 
 
 ![](/Tutorials/SSH/image1.PNG)
@@ -26,11 +44,19 @@ More information can be found in the UCloud [documentation](https://docs.cloud.s
 
 ![](/Tutorials/SSH/image5.PNG)
 
-### Step 2: When job ready please locate and copy the SSH adress 
+### Step 2: When job ready please locate and copy the SSH address 
 
 ![](/Tutorials/SSH/image6.PNG)
 
-## Open Visual Studio Code (VScode)
+## Connect the using a Local Terminal App
+
+Paste the SSH address into a terminal, press enter and follow a few intuitive steps.
+
+![](/Tutorials/SSH/image14.PNG)
+
+##  Connect using Visual Studio Code (VScode)
+
+### Open Visual Studio Code (VScode)
 
 ### Install "Remote - SSH" extension
 
@@ -59,7 +85,7 @@ Follow a few intuitive steps.
 
 
 
-## Run a Jupyter notebook
+## Run a Jupyter notebook (Through VSCode)
 
 ### Install VScode Extension "Python" and "Jupyter" on remote machine
 
@@ -69,10 +95,10 @@ Follow a few intuitive steps.
 ![](/Tutorials/SSH/image13.PNG)
 
 
-## Activate a Conda Environment
+## Activate a Conda Environment (Through VSCode)
 
 
-```R
+```python
 #Running a new UCloud run the following lines in the terminal to activate Conda:
 sudo ln -s /work/miniconda3/bin/conda /usr/bin/conda
 
