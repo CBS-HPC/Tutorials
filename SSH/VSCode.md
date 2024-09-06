@@ -19,9 +19,9 @@ Prerequisite reading:
 - [How to Generate SSH key](/Tutorials/SHH/shh_create/)
 
 
-![](/Tutorials/SSH/image1.PNG)
-
 ## Add public SSH key to UCloud
+
+![](/Tutorials/SSH/image1.PNG)
 
 ### Step 1: On UCloud go to "Resources -> SHH-Keys -> Create SSH key" 
 
