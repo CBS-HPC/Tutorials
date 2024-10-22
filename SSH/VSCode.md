@@ -16,7 +16,7 @@ It will also be shown how to setup a conda environment and how to run a jupyter 
 
 Prerequisite reading:
 
-- [How to Generate SSH key](/Tutorials/SHH/shh_create/)
+- [How to Generate SSH key](/Tutorials/SSH/shh_create/)
 
 
 ## Add public SSH key to UCloud
