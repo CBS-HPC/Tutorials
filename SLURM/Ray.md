@@ -16,15 +16,15 @@ Submitted batch job 2
 ```
 
 ### Open extra Terminal for three Nodes 
-![](SLURM3.PNG)
+![](/Tutorials/SLURM/images/SLURM3.PNG)
 
 ### Run "top" command is used to show the Linux processes.
-![](SLURM4.PNG)
+![](/Tutorials/SLURM/images/SLURM4.PNG)
 
 ### Observed that the work is disbrubted across all three nodes. 
 This may look different for different backends (e.g. Dask). It should be noted that in this example on 8 core nodes were used. Full nodes (64 cores) will generate alot more processes.
 
-![](SLURM5.PNG)
+![](/Tutorials/SLURM/images/SLURM5.PNG)
 
 ## Output files
 
